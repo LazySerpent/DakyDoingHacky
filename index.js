@@ -2,6 +2,8 @@ const { Client, MessageEmbed } = require('discord.js');
 
 const client = new Client();
 
+const ytdl = require('ytdl-core');
+
 
 client.on('ready', () => {
   console.log
@@ -98,7 +100,7 @@ client.on('message', message => {
         { name: '\u200B   اغنم زمانك    \u200B', value: '12', inline: true },
         { name: '\u200B   احبك لو تكون حاضر    \u200B', value: '13', inline: true },
         { name: '\u200B   مقادير    \u200B', value: '14', inline: true },
-        { name: '\u200B   عطني المحبه    \u200B', value: '15', inline: true },
+        { name: '\u200B   none    \u200B', value: '15', inline: true },
         { name: '\u200B   وردك يا زارع الورد    \u200B', value: '16', inline: true },
         { name: '\u200B   زمان الصمت    \u200B', value: '17', inline: true },
         { name: '\u200B   اعترف لك    \u200B', value: '18', inline: true },
@@ -192,7 +194,7 @@ client.on('message', message => {
     if (message.guild.me.voice.channel) return message.reply("فيه أغنية شغالة حالياّ");
 
     message.member.voice.channel.join().then(VoiceConnection => {
-        VoiceConnection.play("./Music/talal_maddah_1.mp3").on("finish", () => VoiceConnection.disconnect());
+        VoiceConnection.play(ytdl("https://youtu.be/LJkLqG5Huls")).on("finish", () => VoiceConnection.disconnect());
         message.reply("شغال...");
     }).catch(e => console.log(e))
 };
@@ -201,7 +203,7 @@ if (message.content == "s2") {
   if (message.guild.me.voice.channel) return message.reply("فيه أغنية شغالة حالياّ");
 
   message.member.voice.channel.join().then(VoiceConnection => {
-      VoiceConnection.play("./Music/talal_maddah_2.mp3").on("finish", () => VoiceConnection.disconnect());
+      VoiceConnection.play(ytdl("https://youtu.be/5ek2gLeTmqU")).on("finish", () => VoiceConnection.disconnect());
       message.reply("شغال...");
   }).catch(e => console.log(e))
 };
@@ -210,7 +212,7 @@ if (message.content == "s3") {
   if (message.guild.me.voice.channel) return message.reply("فيه أغنية شغالة حالياّ");
 
   message.member.voice.channel.join().then(VoiceConnection => {
-      VoiceConnection.play("./Music/talal_maddah_3.mp3").on("finish", () => VoiceConnection.disconnect());
+      VoiceConnection.play("https://youtu.be/xPujFVqw43c").on("finish", () => VoiceConnection.disconnect());
       message.reply("شغال...");
   }).catch(e => console.log(e))
 };
@@ -219,7 +221,7 @@ if (message.content == "s4") {
   if (message.guild.me.voice.channel) return message.reply("فيه أغنية شغالة حالياّ");
 
   message.member.voice.channel.join().then(VoiceConnection => {
-      VoiceConnection.play("./Music/talal_maddah_4.mp3").on("finish", () => VoiceConnection.disconnect());
+      VoiceConnection.play("https://youtu.be/ido9UlVCsVQ").on("finish", () => VoiceConnection.disconnect());
       message.reply("شغال...");
   }).catch(e => console.log(e))
 };
@@ -228,7 +230,7 @@ if (message.content == "s5") {
   if (message.guild.me.voice.channel) return message.reply("فيه أغنية شغالة حالياّ");
 
   message.member.voice.channel.join().then(VoiceConnection => {
-      VoiceConnection.play("./Music/talal_maddah_5.mp3").on("finish", () => VoiceConnection.disconnect());
+      VoiceConnection.play("https://youtu.be/xXPzsq2j0Gs").on("finish", () => VoiceConnection.disconnect());
       message.reply("شغال...");
   }).catch(e => console.log(e))
 };
@@ -237,7 +239,7 @@ if (message.content == "s6") {
   if (message.guild.me.voice.channel) return message.reply("فيه أغنية شغالة حالياّ");
 
   message.member.voice.channel.join().then(VoiceConnection => {
-      VoiceConnection.play("./Music/talal_maddah_6.mp3").on("finish", () => VoiceConnection.disconnect());
+      VoiceConnection.play("https://youtu.be/ydA5g9AKXnM").on("finish", () => VoiceConnection.disconnect());
       message.reply("شغال...");
   }).catch(e => console.log(e))
 };
@@ -246,7 +248,7 @@ if (message.content == "s7") {
   if (message.guild.me.voice.channel) return message.reply("فيه أغنية شغالة حالياّ");
 
   message.member.voice.channel.join().then(VoiceConnection => {
-      VoiceConnection.play("./Music/talal_maddah_7.mp3").on("finish", () => VoiceConnection.disconnect());
+      VoiceConnection.play("https://youtu.be/GHmO5CMR5r8").on("finish", () => VoiceConnection.disconnect());
       message.reply("شغال...");
   }).catch(e => console.log(e))
 };
@@ -255,7 +257,7 @@ if (message.content == "s8") {
   if (message.guild.me.voice.channel) return message.reply("فيه أغنية شغالة حالياّ");
 
   message.member.voice.channel.join().then(VoiceConnection => {
-      VoiceConnection.play("./Music/talal_maddah_8.mp3").on("finish", () => VoiceConnection.disconnect());
+      VoiceConnection.play("https://youtu.be/tO3e0jIfwls").on("finish", () => VoiceConnection.disconnect());
       message.reply("شغال...");
   }).catch(e => console.log(e))
 };
@@ -264,7 +266,7 @@ if (message.content == "s9") {
   if (message.guild.me.voice.channel) return message.reply("فيه أغنية شغالة حالياّ");
 
   message.member.voice.channel.join().then(VoiceConnection => {
-      VoiceConnection.play("./Music/talal_maddah_9.mp3").on("finish", () => VoiceConnection.disconnect());
+      VoiceConnection.play("https://youtu.be/iCNPU71fjMQ").on("finish", () => VoiceConnection.disconnect());
       message.reply("شغال...");
   }).catch(e => console.log(e))
 };
@@ -273,7 +275,7 @@ if (message.content == "s10") {
   if (message.guild.me.voice.channel) return message.reply("فيه أغنية شغالة حالياّ");
 
   message.member.voice.channel.join().then(VoiceConnection => {
-      VoiceConnection.play("./Music/talal_maddah_10.mp3").on("finish", () => VoiceConnection.disconnect());
+      VoiceConnection.play("https://youtu.be/xm8ssMV7V80").on("finish", () => VoiceConnection.disconnect());
       message.reply("شغال...");
   }).catch(e => console.log(e))
 };
@@ -282,7 +284,7 @@ if (message.content == "s11") {
   if (message.guild.me.voice.channel) return message.reply("فيه أغنية شغالة حالياّ");
 
   message.member.voice.channel.join().then(VoiceConnection => {
-      VoiceConnection.play("./Music/talal_maddah_11.mp3").on("finish", () => VoiceConnection.disconnect());
+      VoiceConnection.play("https://youtu.be/vxemyk0BDxM").on("finish", () => VoiceConnection.disconnect());
       message.reply("شغال...");
   }).catch(e => console.log(e))
 };
@@ -291,7 +293,7 @@ if (message.content == "s12") {
   if (message.guild.me.voice.channel) return message.reply("فيه أغنية شغالة حالياّ");
 
   message.member.voice.channel.join().then(VoiceConnection => {
-      VoiceConnection.play("./Music/talal_maddah_12.mp3").on("finish", () => VoiceConnection.disconnect());
+      VoiceConnection.play("https://youtu.be/qZS_J6JLQC8").on("finish", () => VoiceConnection.disconnect());
       message.reply("شغال...");
   }).catch(e => console.log(e))
 };
@@ -300,7 +302,7 @@ if (message.content == "s13") {
   if (message.guild.me.voice.channel) return message.reply("فيه أغنية شغالة حالياّ");
 
   message.member.voice.channel.join().then(VoiceConnection => {
-      VoiceConnection.play("./Music/talal_maddah_13.mp3").on("finish", () => VoiceConnection.disconnect());
+      VoiceConnection.play("https://youtu.be/Tilf7ZuYS5E").on("finish", () => VoiceConnection.disconnect());
       message.reply("شغال...");
   }).catch(e => console.log(e))
 };
@@ -309,7 +311,7 @@ if (message.content == "s14") {
   if (message.guild.me.voice.channel) return message.reply("فيه أغنية شغالة حالياّ");
 
   message.member.voice.channel.join().then(VoiceConnection => {
-      VoiceConnection.play("./Music/talal_maddah_14.mp3").on("finish", () => VoiceConnection.disconnect());
+      VoiceConnection.play("https://youtu.be/6o2r-6L6pTY").on("finish", () => VoiceConnection.disconnect());
       message.reply("شغال...");
   }).catch(e => console.log(e))
 };
@@ -318,7 +320,7 @@ if (message.content == "s15") {
   if (message.guild.me.voice.channel) return message.reply("فيه أغنية شغالة حالياّ");
 
   message.member.voice.channel.join().then(VoiceConnection => {
-      VoiceConnection.play("./Music/talal_maddah_15.mp3").on("finish", () => VoiceConnection.disconnect());
+      VoiceConnection.play("").on("finish", () => VoiceConnection.disconnect());
       message.reply("شغال...");
   }).catch(e => console.log(e))
 };
@@ -327,7 +329,7 @@ if (message.content == "s16") {
   if (message.guild.me.voice.channel) return message.reply("فيه أغنية شغالة حالياّ");
 
   message.member.voice.channel.join().then(VoiceConnection => {
-      VoiceConnection.play("./Music/talal_maddah_16.mp3").on("finish", () => VoiceConnection.disconnect());
+      VoiceConnection.play("https://youtu.be/M6LDok-aN34").on("finish", () => VoiceConnection.disconnect());
       message.reply("شغال...");
   }).catch(e => console.log(e))
 };
@@ -336,7 +338,7 @@ if (message.content == "s17") {
   if (message.guild.me.voice.channel) return message.reply("فيه أغنية شغالة حالياّ");
 
   message.member.voice.channel.join().then(VoiceConnection => {
-      VoiceConnection.play("./Music/talal_maddah_17.mp3").on("finish", () => VoiceConnection.disconnect());
+      VoiceConnection.play("https://youtu.be/8H3an-qzJfA").on("finish", () => VoiceConnection.disconnect());
       message.reply("شغال...");
   }).catch(e => console.log(e))
 };
@@ -345,7 +347,7 @@ if (message.content == "s18") {
   if (message.guild.me.voice.channel) return message.reply("فيه أغنية شغالة حالياّ");
 
   message.member.voice.channel.join().then(VoiceConnection => {
-      VoiceConnection.play("./Music/talal_maddah_18.mp3").on("finish", () => VoiceConnection.disconnect());
+      VoiceConnection.play("https://youtu.be/kPUXo2Vuvwk").on("finish", () => VoiceConnection.disconnect());
       message.reply("شغال...");
   }).catch(e => console.log(e))
 };
@@ -354,7 +356,7 @@ if (message.content == "s19") {
   if (message.guild.me.voice.channel) return message.reply("فيه أغنية شغالة حالياّ");
 
   message.member.voice.channel.join().then(VoiceConnection => {
-      VoiceConnection.play("./Music/talal_maddah_19.mp3").on("finish", () => VoiceConnection.disconnect());
+      VoiceConnection.play("https://youtu.be/B65s1h-Wt8E").on("finish", () => VoiceConnection.disconnect());
       message.reply("شغال...");
   }).catch(e => console.log(e))
 };
@@ -363,7 +365,7 @@ if (message.content == "s20") {
   if (message.guild.me.voice.channel) return message.reply("فيه أغنية شغالة حالياّ");
 
   message.member.voice.channel.join().then(VoiceConnection => {
-      VoiceConnection.play("./Music/talal_maddah_20.mp3").on("finish", () => VoiceConnection.disconnect());
+      VoiceConnection.play("https://youtu.be/iguiWTPCLAA").on("finish", () => VoiceConnection.disconnect());
       message.reply("شغال...");
   }).catch(e => console.log(e))
 };
@@ -372,7 +374,7 @@ if (message.content == "s21") {
   if (message.guild.me.voice.channel) return message.reply("فيه أغنية شغالة حالياّ");
 
   message.member.voice.channel.join().then(VoiceConnection => {
-      VoiceConnection.play("./Music/talal_maddah_21.mp3").on("finish", () => VoiceConnection.disconnect());
+      VoiceConnection.play("https://youtu.be/Hfyw3IUbQYE").on("finish", () => VoiceConnection.disconnect());
       message.reply("شغال...");
   }).catch(e => console.log(e))
 };
@@ -381,7 +383,7 @@ if (message.content == "s22") {
   if (message.guild.me.voice.channel) return message.reply("فيه أغنية شغالة حالياّ");
 
   message.member.voice.channel.join().then(VoiceConnection => {
-      VoiceConnection.play("./Music/talal_maddah_22.mp3").on("finish", () => VoiceConnection.disconnect());
+      VoiceConnection.play("https://youtu.be/jB2gSM_MDt4").on("finish", () => VoiceConnection.disconnect());
       message.reply("شغال...");
   }).catch(e => console.log(e))
 };
@@ -390,7 +392,7 @@ if (message.content == "s23") {
   if (message.guild.me.voice.channel) return message.reply("فيه أغنية شغالة حالياّ");
 
   message.member.voice.channel.join().then(VoiceConnection => {
-      VoiceConnection.play("./Music/talal_maddah_23.mp3").on("finish", () => VoiceConnection.disconnect());
+      VoiceConnection.play("https://youtu.be/RiJrRXWInFM").on("finish", () => VoiceConnection.disconnect());
       message.reply("شغال...");
   }).catch(e => console.log(e))
 };
@@ -399,7 +401,7 @@ if (message.content == "s24") {
   if (message.guild.me.voice.channel) return message.reply("فيه أغنية شغالة حالياّ");
 
   message.member.voice.channel.join().then(VoiceConnection => {
-      VoiceConnection.play("./Music/talal_maddah_24.mp3").on("finish", () => VoiceConnection.disconnect());
+      VoiceConnection.play("https://youtu.be/yKUj72e1T6Y").on("finish", () => VoiceConnection.disconnect());
       message.reply("شغال...");
   }).catch(e => console.log(e))
 };
@@ -408,7 +410,7 @@ if (message.content == "s25") {
   if (message.guild.me.voice.channel) return message.reply("فيه أغنية شغالة حالياّ");
 
   message.member.voice.channel.join().then(VoiceConnection => {
-      VoiceConnection.play("./Music/talal_maddah_25.mp3").on("finish", () => VoiceConnection.disconnect());
+      VoiceConnection.play("https://youtu.be/zb-jTZMwsvA").on("finish", () => VoiceConnection.disconnect());
       message.reply("شغال...");
   }).catch(e => console.log(e))
 };
@@ -417,7 +419,7 @@ if (message.content == "s26") {
   if (message.guild.me.voice.channel) return message.reply("فيه أغنية شغالة حالياّ");
 
   message.member.voice.channel.join().then(VoiceConnection => {
-      VoiceConnection.play("./Music/talal_maddah_26.mp3").on("finish", () => VoiceConnection.disconnect());
+      VoiceConnection.play("https://youtu.be/UYfIctTUjG0").on("finish", () => VoiceConnection.disconnect());
       message.reply("شغال...");
   }).catch(e => console.log(e))
 };
@@ -426,7 +428,7 @@ if (message.content == "s27") {
   if (message.guild.me.voice.channel) return message.reply("فيه أغنية شغالة حالياّ");
 
   message.member.voice.channel.join().then(VoiceConnection => {
-      VoiceConnection.play("./Music/talal_maddah_27.mp3").on("finish", () => VoiceConnection.disconnect());
+      VoiceConnection.play("https://youtu.be/N7vJLzCP1AI").on("finish", () => VoiceConnection.disconnect());
       message.reply("شغال...");
   }).catch(e => console.log(e))
 };
@@ -435,7 +437,7 @@ if (message.content == "s28") {
   if (message.guild.me.voice.channel) return message.reply("فيه أغنية شغالة حالياّ");
 
   message.member.voice.channel.join().then(VoiceConnection => {
-      VoiceConnection.play("./Music/talal_maddah_28.mp3").on("finish", () => VoiceConnection.disconnect());
+      VoiceConnection.play("https://youtu.be/ItdePts9mjg").on("finish", () => VoiceConnection.disconnect());
       message.reply("شغال...");
   }).catch(e => console.log(e))
 };
@@ -444,7 +446,7 @@ if (message.content == "s29") {
   if (message.guild.me.voice.channel) return message.reply("فيه أغنية شغالة حالياّ");
 
   message.member.voice.channel.join().then(VoiceConnection => {
-      VoiceConnection.play("./Music/talal_maddah_29.mp3").on("finish", () => VoiceConnection.disconnect());
+      VoiceConnection.play("https://youtu.be/zRTIi-YWY9U").on("finish", () => VoiceConnection.disconnect());
       message.reply("شغال...");
   }).catch(e => console.log(e))
 };
@@ -453,7 +455,7 @@ if (message.content == "s30") {
   if (message.guild.me.voice.channel) return message.reply("فيه أغنية شغالة حالياّ");
 
   message.member.voice.channel.join().then(VoiceConnection => {
-      VoiceConnection.play("./Music/talal_maddah_30.mp3").on("finish", () => VoiceConnection.disconnect());
+      VoiceConnection.play("https://youtu.be/jPg25kpiOH4").on("finish", () => VoiceConnection.disconnect());
       message.reply("شغال...");
   }).catch(e => console.log(e))
 };
@@ -462,7 +464,7 @@ if (message.content == "s31") {
   if (message.guild.me.voice.channel) return message.reply("فيه أغنية شغالة حالياّ");
 
   message.member.voice.channel.join().then(VoiceConnection => {
-      VoiceConnection.play("./Music/talal_maddah_31.mp3").on("finish", () => VoiceConnection.disconnect());
+      VoiceConnection.play("https://youtu.be/gdsGaNMGXv4").on("finish", () => VoiceConnection.disconnect());
       message.reply("شغال...");
   }).catch(e => console.log(e))
 };
@@ -471,7 +473,7 @@ if (message.content == "s32") {
   if (message.guild.me.voice.channel) return message.reply("فيه أغنية شغالة حالياّ");
 
   message.member.voice.channel.join().then(VoiceConnection => {
-      VoiceConnection.play("./Music/talal_maddah_32.mp3").on("finish", () => VoiceConnection.disconnect());
+      VoiceConnection.play("https://youtu.be/F4saYZDQszQ").on("finish", () => VoiceConnection.disconnect());
       message.reply("شغال...");
   }).catch(e => console.log(e))
 };
@@ -480,7 +482,7 @@ if (message.content == "s33") {
   if (message.guild.me.voice.channel) return message.reply("فيه أغنية شغالة حالياّ");
 
   message.member.voice.channel.join().then(VoiceConnection => {
-      VoiceConnection.play("./Music/talal_maddah_33.mp3").on("finish", () => VoiceConnection.disconnect());
+      VoiceConnection.play("https://youtu.be/cJaAF7f1yrA").on("finish", () => VoiceConnection.disconnect());
       message.reply("شغال...");
   }).catch(e => console.log(e))
 };
@@ -489,7 +491,7 @@ if (message.content == "s34") {
   if (message.guild.me.voice.channel) return message.reply("فيه أغنية شغالة حالياّ");
 
   message.member.voice.channel.join().then(VoiceConnection => {
-      VoiceConnection.play("./Music/talal_maddah_34.mp3").on("finish", () => VoiceConnection.disconnect());
+      VoiceConnection.play("https://youtu.be/zCZ4Pwao5WE").on("finish", () => VoiceConnection.disconnect());
       message.reply("شغال...");
   }).catch(e => console.log(e))
 };
@@ -498,7 +500,7 @@ if (message.content == "s35") {
   if (message.guild.me.voice.channel) return message.reply("فيه أغنية شغالة حالياّ");
 
   message.member.voice.channel.join().then(VoiceConnection => {
-      VoiceConnection.play("./Music/talal_maddah_35.mp3").on("finish", () => VoiceConnection.disconnect());
+      VoiceConnection.play("https://youtu.be/CFgTwkP_xYo").on("finish", () => VoiceConnection.disconnect());
       message.reply("شغال...");
   }).catch(e => console.log(e))
 };
@@ -507,7 +509,7 @@ if (message.content == "s36") {
   if (message.guild.me.voice.channel) return message.reply("فيه أغنية شغالة حالياّ");
 
   message.member.voice.channel.join().then(VoiceConnection => {
-      VoiceConnection.play("./Music/talal_maddah_36.mp3").on("finish", () => VoiceConnection.disconnect());
+      VoiceConnection.play("https://youtu.be/7dDavyj4tUI").on("finish", () => VoiceConnection.disconnect());
       message.reply("شغال...");
   }).catch(e => console.log(e))
 };
@@ -516,7 +518,7 @@ if (message.content == "s37") {
   if (message.guild.me.voice.channel) return message.reply("فيه أغنية شغالة حالياّ");
 
   message.member.voice.channel.join().then(VoiceConnection => {
-      VoiceConnection.play("./Music/talal_maddah_37.mp3").on("finish", () => VoiceConnection.disconnect());
+      VoiceConnection.play("https://youtu.be/KVGFfd65TKQ").on("finish", () => VoiceConnection.disconnect());
       message.reply("شغال...");
   }).catch(e => console.log(e))
 };
@@ -667,7 +669,7 @@ if (message.content == "sdis") {
 };
 });
 
-const ytdl = require("ytdl-core");
+const { prefix, token } = require("./config.json");
 
 
 const queue = new Map();
