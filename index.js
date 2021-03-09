@@ -528,7 +528,7 @@ if (message.content == "a1") {
   if (message.guild.me.voice.channel) return message.reply("فيه أغنية شغالة حالياّ");
 
   message.member.voice.channel.join().then(VoiceConnection => {
-      VoiceConnection.play("./Music/abady_aljohar_1.mp3").on("finish", () => VoiceConnection.disconnect());
+      VoiceConnection.play(ytdl("https://youtu.be/axS66pSVyas")).on("finish", () => VoiceConnection.disconnect());
       message.reply("شغال...");
   }).catch(e => console.log(e))
 };
@@ -537,7 +537,7 @@ if (message.content == "a2") {
   if (message.guild.me.voice.channel) return message.reply("فيه أغنية شغالة حالياّ");
 
   message.member.voice.channel.join().then(VoiceConnection => {
-      VoiceConnection.play("./Music/abady_aljohar_2.mp3").on("finish", () => VoiceConnection.disconnect());
+      VoiceConnection.play(ytdl("https://youtu.be/Nq9ZH2KtugA")).on("finish", () => VoiceConnection.disconnect());
       message.reply("شغال...");
   }).catch(e => console.log(e))
 };
@@ -546,7 +546,7 @@ if (message.content == "a3") {
   if (message.guild.me.voice.channel) return message.reply("فيه أغنية شغالة حالياّ");
 
   message.member.voice.channel.join().then(VoiceConnection => {
-      VoiceConnection.play("./Music/abady_aljohar_3.mp3").on("finish", () => VoiceConnection.disconnect());
+      VoiceConnection.play(ytdl("https://youtu.be/FHtvNU_X2Xk")).on("finish", () => VoiceConnection.disconnect());
       message.reply("شغال...");
   }).catch(e => console.log(e))
 };
@@ -555,7 +555,7 @@ if (message.content == "a4") {
   if (message.guild.me.voice.channel) return message.reply("فيه أغنية شغالة حالياّ");
 
   message.member.voice.channel.join().then(VoiceConnection => {
-      VoiceConnection.play("./Music/abady_aljohar_4.mp3").on("finish", () => VoiceConnection.disconnect());
+      VoiceConnection.play(ytdl("https://youtu.be/CsPC9pUOXKo")).on("finish", () => VoiceConnection.disconnect());
       message.reply("شغال...");
   }).catch(e => console.log(e))
 };
@@ -564,7 +564,7 @@ if (message.content == "a5") {
   if (message.guild.me.voice.channel) return message.reply("فيه أغنية شغالة حالياّ");
 
   message.member.voice.channel.join().then(VoiceConnection => {
-      VoiceConnection.play("./Music/abady_aljohar_5.mp3").on("finish", () => VoiceConnection.disconnect());
+      VoiceConnection.play(ytdl("https://youtu.be/F0uQiVwwaBo")).on("finish", () => VoiceConnection.disconnect());
       message.reply("شغال...");
   }).catch(e => console.log(e))
 };
@@ -573,7 +573,7 @@ if (message.content == "a6") {
   if (message.guild.me.voice.channel) return message.reply("فيه أغنية شغالة حالياّ");
 
   message.member.voice.channel.join().then(VoiceConnection => {
-      VoiceConnection.play("./Music/abady_aljohar_6.mp3").on("finish", () => VoiceConnection.disconnect());
+      VoiceConnection.play(ytdl("https://youtu.be/cv0XDa4mC9U")).on("finish", () => VoiceConnection.disconnect());
       message.reply("شغال...");
   }).catch(e => console.log(e))
 };
@@ -582,7 +582,7 @@ if (message.content == "a7") {
   if (message.guild.me.voice.channel) return message.reply("فيه أغنية شغالة حالياّ");
 
   message.member.voice.channel.join().then(VoiceConnection => {
-      VoiceConnection.play("./Music/abady_aljohar_7.mp3").on("finish", () => VoiceConnection.disconnect());
+      VoiceConnection.play(ytdl("https://youtu.be/OWpnybV2-JE")).on("finish", () => VoiceConnection.disconnect());
       message.reply("شغال...");
   }).catch(e => console.log(e))
 };
@@ -592,7 +592,7 @@ if (message.content == "k1") {
   if (message.guild.me.voice.channel) return message.reply("فيه أغنية شغالة حالياّ");
 
   message.member.voice.channel.join().then(VoiceConnection => {
-      VoiceConnection.play("./Music/khalid_abdulrahman_1.mp3").on("finish", () => VoiceConnection.disconnect());
+      VoiceConnection.play(ytdl("https://youtu.be/FHkPM_oeETg")).on("finish", () => VoiceConnection.disconnect());
       message.reply("شغال...");
   }).catch(e => console.log(e))
 };
@@ -601,7 +601,7 @@ if (message.content == "k2") {
   if (message.guild.me.voice.channel) return message.reply("فيه أغنية شغالة حالياّ");
 
   message.member.voice.channel.join().then(VoiceConnection => {
-      VoiceConnection.play("./Music/khalid_abdulrahman_2.mp3").on("finish", () => VoiceConnection.disconnect());
+      VoiceConnection.play(ytdl("https://youtu.be/C1wrjE4FS2Q")).on("finish", () => VoiceConnection.disconnect());
       message.reply("شغال...");
   }).catch(e => console.log(e))
 };
@@ -610,7 +610,7 @@ if (message.content == "k3") {
   if (message.guild.me.voice.channel) return message.reply("فيه أغنية شغالة حالياّ");
 
   message.member.voice.channel.join().then(VoiceConnection => {
-      VoiceConnection.play("./Music/khalid_abdulrahman_3.mp3").on("finish", () => VoiceConnection.disconnect());
+      VoiceConnection.play(ytdl("https://youtu.be/Z7b37zgCQow")).on("finish", () => VoiceConnection.disconnect());
       message.reply("شغال...");
   }).catch(e => console.log(e))
 };
@@ -619,7 +619,7 @@ if (message.content == "k4") {
   if (message.guild.me.voice.channel) return message.reply("فيه أغنية شغالة حالياّ");
 
   message.member.voice.channel.join().then(VoiceConnection => {
-      VoiceConnection.play("./Music/khalid_abdulrahman_4.mp3").on("finish", () => VoiceConnection.disconnect());
+      VoiceConnection.play(ytdl("https://youtu.be/l_iU1Jlnajg")).on("finish", () => VoiceConnection.disconnect());
       message.reply("شغال...");
   }).catch(e => console.log(e))
 };
@@ -628,7 +628,7 @@ if (message.content == "k5") {
   if (message.guild.me.voice.channel) return message.reply("فيه أغنية شغالة حالياّ");
 
   message.member.voice.channel.join().then(VoiceConnection => {
-      VoiceConnection.play("./Music/khalid_abdulrahman_5.mp3").on("finish", () => VoiceConnection.disconnect());
+      VoiceConnection.play(ytdl("https://youtu.be/Tr3A9vUDYg4")).on("finish", () => VoiceConnection.disconnect());
       message.reply("شغال...");
   }).catch(e => console.log(e))
 };
@@ -637,7 +637,7 @@ if (message.content == "k6") {
   if (message.guild.me.voice.channel) return message.reply("فيه أغنية شغالة حالياّ");
 
   message.member.voice.channel.join().then(VoiceConnection => {
-      VoiceConnection.play("./Music/khalid_abdulrahman_6.mp3").on("finish", () => VoiceConnection.disconnect());
+      VoiceConnection.play(ytdl("https://youtu.be/zUt-qN7nPN4")).on("finish", () => VoiceConnection.disconnect());
       message.reply("شغال...");
   }).catch(e => console.log(e))
 };
@@ -646,7 +646,7 @@ if (message.content == "k7") {
   if (message.guild.me.voice.channel) return message.reply("فيه أغنية شغالة حالياّ");
 
   message.member.voice.channel.join().then(VoiceConnection => {
-      VoiceConnection.play("./Music/khalid_abdulrahman_7.mp3").on("finish", () => VoiceConnection.disconnect());
+      VoiceConnection.play(ytdl("https://youtu.be/RH6Ov-cqofY")).on("finish", () => VoiceConnection.disconnect());
       message.reply("شغال...");
   }).catch(e => console.log(e))
 };
@@ -655,7 +655,7 @@ if (message.content == "k8") {
   if (message.guild.me.voice.channel) return message.reply("فيه أغنية شغالة حالياّ");
 
   message.member.voice.channel.join().then(VoiceConnection => {
-      VoiceConnection.play("./Music/khalid_abdulrahman_8.mp3").on("finish", () => VoiceConnection.disconnect());
+      VoiceConnection.play(ytdl("https://youtu.be/MqE_IBIz0O8")).on("finish", () => VoiceConnection.disconnect());
       message.reply("شغال...");
   }).catch(e => console.log(e))
 };
