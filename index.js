@@ -212,7 +212,7 @@ if (message.content == "s3") {
   if (message.guild.me.voice.channel) return message.reply("فيه أغنية شغالة حالياّ");
 
   message.member.voice.channel.join().then(VoiceConnection => {
-      VoiceConnection.play("https://youtu.be/xPujFVqw43c").on("finish", () => VoiceConnection.disconnect());
+      VoiceConnection.play(ytdl("https://youtu.be/xPujFVqw43c")).on("finish", () => VoiceConnection.disconnect());
       message.reply("شغال...");
   }).catch(e => console.log(e))
 };
@@ -221,7 +221,7 @@ if (message.content == "s4") {
   if (message.guild.me.voice.channel) return message.reply("فيه أغنية شغالة حالياّ");
 
   message.member.voice.channel.join().then(VoiceConnection => {
-      VoiceConnection.play("https://youtu.be/ido9UlVCsVQ").on("finish", () => VoiceConnection.disconnect());
+      VoiceConnection.play(ytdl("https://youtu.be/ido9UlVCsVQ")).on("finish", () => VoiceConnection.disconnect());
       message.reply("شغال...");
   }).catch(e => console.log(e))
 };
@@ -230,7 +230,7 @@ if (message.content == "s5") {
   if (message.guild.me.voice.channel) return message.reply("فيه أغنية شغالة حالياّ");
 
   message.member.voice.channel.join().then(VoiceConnection => {
-      VoiceConnection.play("https://youtu.be/xXPzsq2j0Gs").on("finish", () => VoiceConnection.disconnect());
+      VoiceConnection.play(ytdl("https://youtu.be/xXPzsq2j0Gs")).on("finish", () => VoiceConnection.disconnect());
       message.reply("شغال...");
   }).catch(e => console.log(e))
 };
@@ -239,7 +239,7 @@ if (message.content == "s6") {
   if (message.guild.me.voice.channel) return message.reply("فيه أغنية شغالة حالياّ");
 
   message.member.voice.channel.join().then(VoiceConnection => {
-      VoiceConnection.play("https://youtu.be/ydA5g9AKXnM").on("finish", () => VoiceConnection.disconnect());
+      VoiceConnection.play(ytdl("https://youtu.be/ydA5g9AKXnM")).on("finish", () => VoiceConnection.disconnect());
       message.reply("شغال...");
   }).catch(e => console.log(e))
 };
@@ -248,7 +248,7 @@ if (message.content == "s7") {
   if (message.guild.me.voice.channel) return message.reply("فيه أغنية شغالة حالياّ");
 
   message.member.voice.channel.join().then(VoiceConnection => {
-      VoiceConnection.play("https://youtu.be/GHmO5CMR5r8").on("finish", () => VoiceConnection.disconnect());
+      VoiceConnection.play(ytdl("https://youtu.be/GHmO5CMR5r8")).on("finish", () => VoiceConnection.disconnect());
       message.reply("شغال...");
   }).catch(e => console.log(e))
 };
@@ -257,7 +257,7 @@ if (message.content == "s8") {
   if (message.guild.me.voice.channel) return message.reply("فيه أغنية شغالة حالياّ");
 
   message.member.voice.channel.join().then(VoiceConnection => {
-      VoiceConnection.play("https://youtu.be/tO3e0jIfwls").on("finish", () => VoiceConnection.disconnect());
+      VoiceConnection.play(ytdl("https://youtu.be/tO3e0jIfwls")).on("finish", () => VoiceConnection.disconnect());
       message.reply("شغال...");
   }).catch(e => console.log(e))
 };
@@ -266,7 +266,7 @@ if (message.content == "s9") {
   if (message.guild.me.voice.channel) return message.reply("فيه أغنية شغالة حالياّ");
 
   message.member.voice.channel.join().then(VoiceConnection => {
-      VoiceConnection.play("https://youtu.be/iCNPU71fjMQ").on("finish", () => VoiceConnection.disconnect());
+      VoiceConnection.play(ytdl("https://youtu.be/iCNPU71fjMQ")).on("finish", () => VoiceConnection.disconnect());
       message.reply("شغال...");
   }).catch(e => console.log(e))
 };
@@ -275,7 +275,7 @@ if (message.content == "s10") {
   if (message.guild.me.voice.channel) return message.reply("فيه أغنية شغالة حالياّ");
 
   message.member.voice.channel.join().then(VoiceConnection => {
-      VoiceConnection.play("https://youtu.be/xm8ssMV7V80").on("finish", () => VoiceConnection.disconnect());
+      VoiceConnection.play(ytdl("https://youtu.be/xm8ssMV7V80")).on("finish", () => VoiceConnection.disconnect());
       message.reply("شغال...");
   }).catch(e => console.log(e))
 };
@@ -284,7 +284,7 @@ if (message.content == "s11") {
   if (message.guild.me.voice.channel) return message.reply("فيه أغنية شغالة حالياّ");
 
   message.member.voice.channel.join().then(VoiceConnection => {
-      VoiceConnection.play("https://youtu.be/vxemyk0BDxM").on("finish", () => VoiceConnection.disconnect());
+      VoiceConnection.play(ytdl("https://youtu.be/vxemyk0BDxM")).on("finish", () => VoiceConnection.disconnect());
       message.reply("شغال...");
   }).catch(e => console.log(e))
 };
@@ -293,7 +293,7 @@ if (message.content == "s12") {
   if (message.guild.me.voice.channel) return message.reply("فيه أغنية شغالة حالياّ");
 
   message.member.voice.channel.join().then(VoiceConnection => {
-      VoiceConnection.play("https://youtu.be/qZS_J6JLQC8").on("finish", () => VoiceConnection.disconnect());
+      VoiceConnection.play(ytdl("https://youtu.be/qZS_J6JLQC8")).on("finish", () => VoiceConnection.disconnect());
       message.reply("شغال...");
   }).catch(e => console.log(e))
 };
@@ -302,7 +302,7 @@ if (message.content == "s13") {
   if (message.guild.me.voice.channel) return message.reply("فيه أغنية شغالة حالياّ");
 
   message.member.voice.channel.join().then(VoiceConnection => {
-      VoiceConnection.play("https://youtu.be/Tilf7ZuYS5E").on("finish", () => VoiceConnection.disconnect());
+      VoiceConnection.play(ytdl("https://youtu.be/Tilf7ZuYS5E")).on("finish", () => VoiceConnection.disconnect());
       message.reply("شغال...");
   }).catch(e => console.log(e))
 };
@@ -311,7 +311,7 @@ if (message.content == "s14") {
   if (message.guild.me.voice.channel) return message.reply("فيه أغنية شغالة حالياّ");
 
   message.member.voice.channel.join().then(VoiceConnection => {
-      VoiceConnection.play("https://youtu.be/6o2r-6L6pTY").on("finish", () => VoiceConnection.disconnect());
+      VoiceConnection.play(ytdl("https://youtu.be/6o2r-6L6pTY")).on("finish", () => VoiceConnection.disconnect());
       message.reply("شغال...");
   }).catch(e => console.log(e))
 };
@@ -329,7 +329,7 @@ if (message.content == "s16") {
   if (message.guild.me.voice.channel) return message.reply("فيه أغنية شغالة حالياّ");
 
   message.member.voice.channel.join().then(VoiceConnection => {
-      VoiceConnection.play("https://youtu.be/M6LDok-aN34").on("finish", () => VoiceConnection.disconnect());
+      VoiceConnection.play(ytdl("https://youtu.be/M6LDok-aN34")).on("finish", () => VoiceConnection.disconnect());
       message.reply("شغال...");
   }).catch(e => console.log(e))
 };
@@ -338,7 +338,7 @@ if (message.content == "s17") {
   if (message.guild.me.voice.channel) return message.reply("فيه أغنية شغالة حالياّ");
 
   message.member.voice.channel.join().then(VoiceConnection => {
-      VoiceConnection.play("https://youtu.be/8H3an-qzJfA").on("finish", () => VoiceConnection.disconnect());
+      VoiceConnection.play(ytdl("https://youtu.be/8H3an-qzJfA")).on("finish", () => VoiceConnection.disconnect());
       message.reply("شغال...");
   }).catch(e => console.log(e))
 };
@@ -347,7 +347,7 @@ if (message.content == "s18") {
   if (message.guild.me.voice.channel) return message.reply("فيه أغنية شغالة حالياّ");
 
   message.member.voice.channel.join().then(VoiceConnection => {
-      VoiceConnection.play("https://youtu.be/kPUXo2Vuvwk").on("finish", () => VoiceConnection.disconnect());
+      VoiceConnection.play(ytdl("https://youtu.be/kPUXo2Vuvwk")).on("finish", () => VoiceConnection.disconnect());
       message.reply("شغال...");
   }).catch(e => console.log(e))
 };
@@ -356,7 +356,7 @@ if (message.content == "s19") {
   if (message.guild.me.voice.channel) return message.reply("فيه أغنية شغالة حالياّ");
 
   message.member.voice.channel.join().then(VoiceConnection => {
-      VoiceConnection.play("https://youtu.be/B65s1h-Wt8E").on("finish", () => VoiceConnection.disconnect());
+      VoiceConnection.play(ytdl("https://youtu.be/B65s1h-Wt8E")).on("finish", () => VoiceConnection.disconnect());
       message.reply("شغال...");
   }).catch(e => console.log(e))
 };
@@ -365,7 +365,7 @@ if (message.content == "s20") {
   if (message.guild.me.voice.channel) return message.reply("فيه أغنية شغالة حالياّ");
 
   message.member.voice.channel.join().then(VoiceConnection => {
-      VoiceConnection.play("https://youtu.be/iguiWTPCLAA").on("finish", () => VoiceConnection.disconnect());
+      VoiceConnection.play(ytdl("https://youtu.be/iguiWTPCLAA")).on("finish", () => VoiceConnection.disconnect());
       message.reply("شغال...");
   }).catch(e => console.log(e))
 };
@@ -374,7 +374,7 @@ if (message.content == "s21") {
   if (message.guild.me.voice.channel) return message.reply("فيه أغنية شغالة حالياّ");
 
   message.member.voice.channel.join().then(VoiceConnection => {
-      VoiceConnection.play("https://youtu.be/Hfyw3IUbQYE").on("finish", () => VoiceConnection.disconnect());
+      VoiceConnection.play(ytdl("https://youtu.be/Hfyw3IUbQYE")).on("finish", () => VoiceConnection.disconnect());
       message.reply("شغال...");
   }).catch(e => console.log(e))
 };
@@ -383,7 +383,7 @@ if (message.content == "s22") {
   if (message.guild.me.voice.channel) return message.reply("فيه أغنية شغالة حالياّ");
 
   message.member.voice.channel.join().then(VoiceConnection => {
-      VoiceConnection.play("https://youtu.be/jB2gSM_MDt4").on("finish", () => VoiceConnection.disconnect());
+      VoiceConnection.play(ytdl("https://youtu.be/jB2gSM_MDt4")).on("finish", () => VoiceConnection.disconnect());
       message.reply("شغال...");
   }).catch(e => console.log(e))
 };
@@ -392,7 +392,7 @@ if (message.content == "s23") {
   if (message.guild.me.voice.channel) return message.reply("فيه أغنية شغالة حالياّ");
 
   message.member.voice.channel.join().then(VoiceConnection => {
-      VoiceConnection.play("https://youtu.be/RiJrRXWInFM").on("finish", () => VoiceConnection.disconnect());
+      VoiceConnection.play(ytdl("https://youtu.be/RiJrRXWInFM")).on("finish", () => VoiceConnection.disconnect());
       message.reply("شغال...");
   }).catch(e => console.log(e))
 };
@@ -401,7 +401,7 @@ if (message.content == "s24") {
   if (message.guild.me.voice.channel) return message.reply("فيه أغنية شغالة حالياّ");
 
   message.member.voice.channel.join().then(VoiceConnection => {
-      VoiceConnection.play("https://youtu.be/yKUj72e1T6Y").on("finish", () => VoiceConnection.disconnect());
+      VoiceConnection.play(ytdl("https://youtu.be/yKUj72e1T6Y")).on("finish", () => VoiceConnection.disconnect());
       message.reply("شغال...");
   }).catch(e => console.log(e))
 };
@@ -410,7 +410,7 @@ if (message.content == "s25") {
   if (message.guild.me.voice.channel) return message.reply("فيه أغنية شغالة حالياّ");
 
   message.member.voice.channel.join().then(VoiceConnection => {
-      VoiceConnection.play("https://youtu.be/zb-jTZMwsvA").on("finish", () => VoiceConnection.disconnect());
+      VoiceConnection.play(ytdl("https://youtu.be/zb-jTZMwsvA")).on("finish", () => VoiceConnection.disconnect());
       message.reply("شغال...");
   }).catch(e => console.log(e))
 };
@@ -419,7 +419,7 @@ if (message.content == "s26") {
   if (message.guild.me.voice.channel) return message.reply("فيه أغنية شغالة حالياّ");
 
   message.member.voice.channel.join().then(VoiceConnection => {
-      VoiceConnection.play("https://youtu.be/UYfIctTUjG0").on("finish", () => VoiceConnection.disconnect());
+      VoiceConnection.play(ytdl("https://youtu.be/UYfIctTUjG0")).on("finish", () => VoiceConnection.disconnect());
       message.reply("شغال...");
   }).catch(e => console.log(e))
 };
@@ -428,7 +428,7 @@ if (message.content == "s27") {
   if (message.guild.me.voice.channel) return message.reply("فيه أغنية شغالة حالياّ");
 
   message.member.voice.channel.join().then(VoiceConnection => {
-      VoiceConnection.play("https://youtu.be/N7vJLzCP1AI").on("finish", () => VoiceConnection.disconnect());
+      VoiceConnection.play(ytdl("https://youtu.be/N7vJLzCP1AI")).on("finish", () => VoiceConnection.disconnect());
       message.reply("شغال...");
   }).catch(e => console.log(e))
 };
@@ -437,7 +437,7 @@ if (message.content == "s28") {
   if (message.guild.me.voice.channel) return message.reply("فيه أغنية شغالة حالياّ");
 
   message.member.voice.channel.join().then(VoiceConnection => {
-      VoiceConnection.play("https://youtu.be/ItdePts9mjg").on("finish", () => VoiceConnection.disconnect());
+      VoiceConnection.play(ytdl("https://youtu.be/ItdePts9mjg")).on("finish", () => VoiceConnection.disconnect());
       message.reply("شغال...");
   }).catch(e => console.log(e))
 };
@@ -446,7 +446,7 @@ if (message.content == "s29") {
   if (message.guild.me.voice.channel) return message.reply("فيه أغنية شغالة حالياّ");
 
   message.member.voice.channel.join().then(VoiceConnection => {
-      VoiceConnection.play("https://youtu.be/zRTIi-YWY9U").on("finish", () => VoiceConnection.disconnect());
+      VoiceConnection.play(ytdl("https://youtu.be/zRTIi-YWY9U")).on("finish", () => VoiceConnection.disconnect());
       message.reply("شغال...");
   }).catch(e => console.log(e))
 };
@@ -455,7 +455,7 @@ if (message.content == "s30") {
   if (message.guild.me.voice.channel) return message.reply("فيه أغنية شغالة حالياّ");
 
   message.member.voice.channel.join().then(VoiceConnection => {
-      VoiceConnection.play("https://youtu.be/jPg25kpiOH4").on("finish", () => VoiceConnection.disconnect());
+      VoiceConnection.play(ytdl("https://youtu.be/jPg25kpiOH4")).on("finish", () => VoiceConnection.disconnect());
       message.reply("شغال...");
   }).catch(e => console.log(e))
 };
@@ -464,7 +464,7 @@ if (message.content == "s31") {
   if (message.guild.me.voice.channel) return message.reply("فيه أغنية شغالة حالياّ");
 
   message.member.voice.channel.join().then(VoiceConnection => {
-      VoiceConnection.play("https://youtu.be/gdsGaNMGXv4").on("finish", () => VoiceConnection.disconnect());
+      VoiceConnection.play(ytdl("https://youtu.be/gdsGaNMGXv4")).on("finish", () => VoiceConnection.disconnect());
       message.reply("شغال...");
   }).catch(e => console.log(e))
 };
@@ -473,7 +473,7 @@ if (message.content == "s32") {
   if (message.guild.me.voice.channel) return message.reply("فيه أغنية شغالة حالياّ");
 
   message.member.voice.channel.join().then(VoiceConnection => {
-      VoiceConnection.play("https://youtu.be/F4saYZDQszQ").on("finish", () => VoiceConnection.disconnect());
+      VoiceConnection.play(ytdl("https://youtu.be/F4saYZDQszQ")).on("finish", () => VoiceConnection.disconnect());
       message.reply("شغال...");
   }).catch(e => console.log(e))
 };
@@ -482,7 +482,7 @@ if (message.content == "s33") {
   if (message.guild.me.voice.channel) return message.reply("فيه أغنية شغالة حالياّ");
 
   message.member.voice.channel.join().then(VoiceConnection => {
-      VoiceConnection.play("https://youtu.be/cJaAF7f1yrA").on("finish", () => VoiceConnection.disconnect());
+      VoiceConnection.play(ytdl("https://youtu.be/cJaAF7f1yrA")).on("finish", () => VoiceConnection.disconnect());
       message.reply("شغال...");
   }).catch(e => console.log(e))
 };
@@ -491,7 +491,7 @@ if (message.content == "s34") {
   if (message.guild.me.voice.channel) return message.reply("فيه أغنية شغالة حالياّ");
 
   message.member.voice.channel.join().then(VoiceConnection => {
-      VoiceConnection.play("https://youtu.be/zCZ4Pwao5WE").on("finish", () => VoiceConnection.disconnect());
+      VoiceConnection.play(ytdl("https://youtu.be/zCZ4Pwao5WE")).on("finish", () => VoiceConnection.disconnect());
       message.reply("شغال...");
   }).catch(e => console.log(e))
 };
@@ -500,7 +500,7 @@ if (message.content == "s35") {
   if (message.guild.me.voice.channel) return message.reply("فيه أغنية شغالة حالياّ");
 
   message.member.voice.channel.join().then(VoiceConnection => {
-      VoiceConnection.play("https://youtu.be/CFgTwkP_xYo").on("finish", () => VoiceConnection.disconnect());
+      VoiceConnection.play(ytdl("https://youtu.be/CFgTwkP_xYo")).on("finish", () => VoiceConnection.disconnect());
       message.reply("شغال...");
   }).catch(e => console.log(e))
 };
@@ -509,7 +509,7 @@ if (message.content == "s36") {
   if (message.guild.me.voice.channel) return message.reply("فيه أغنية شغالة حالياّ");
 
   message.member.voice.channel.join().then(VoiceConnection => {
-      VoiceConnection.play("https://youtu.be/7dDavyj4tUI").on("finish", () => VoiceConnection.disconnect());
+      VoiceConnection.play(ytdl("https://youtu.be/7dDavyj4tUI")).on("finish", () => VoiceConnection.disconnect());
       message.reply("شغال...");
   }).catch(e => console.log(e))
 };
@@ -518,7 +518,7 @@ if (message.content == "s37") {
   if (message.guild.me.voice.channel) return message.reply("فيه أغنية شغالة حالياّ");
 
   message.member.voice.channel.join().then(VoiceConnection => {
-      VoiceConnection.play("https://youtu.be/KVGFfd65TKQ").on("finish", () => VoiceConnection.disconnect());
+      VoiceConnection.play(ytdl("https://youtu.be/KVGFfd65TKQ")).on("finish", () => VoiceConnection.disconnect());
       message.reply("شغال...");
   }).catch(e => console.log(e))
 };
