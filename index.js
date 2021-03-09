@@ -392,7 +392,7 @@ if (message.content == "s23") {
   if (message.guild.me.voice.channel) return message.reply("فيه أغنية شغالة حالياّ");
 
   message.member.voice.channel.join().then(VoiceConnection => {
-      VoiceConnection.play(ytdl("https://youtu.be/RiJrRXWInFM")).on("finish", () => VoiceConnection.disconnect());
+      VoiceConnection.play(ytdl("https://youtu.be/MnVdicNAXHc")).on("finish", () => VoiceConnection.disconnect());
       message.reply("شغال...");
   }).catch(e => console.log(e))
 };
