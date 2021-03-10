@@ -76,6 +76,10 @@ client.on('ready', () => {
     
   );
 });
+client.on('ready', () => {
+  bot.user.setActivity('𝓓𝓪𝓻𝓴', { type: 'Developer'}).catch(console.error);
+  
+})
 
 
 client.on('message', message => {
