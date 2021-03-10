@@ -77,7 +77,7 @@ client.on('ready', () => {
   );
 });
 client.on('ready', () => {
-  client.user.setActivity('𝓓𝓪𝓻𝓴', { type: 'Developer'}).catch(console.error);
+  client.user.setActivity('shelp', { type: 'PLAYING'}).catch(console.error);
 
 })
 
