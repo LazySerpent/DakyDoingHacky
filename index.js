@@ -175,6 +175,18 @@ client.on('message', message => {
       )
     message.channel.send(embed);
   }
+  if (message.content === 'xlist') {
+    const embed = new MessageEmbed()
+      .setTitle('قائمة جانبية')
+      .setColor(0x11AABB)
+      .addFields(
+        { name: '\u200B', value: '\u200B' },
+        { name: '\u200B    من حب من قلب ماهون    \u200b', value: '1', inline: true },
+        { name: '\u200B   خلصت من جملة الخلان   \u200B', value: '2', inline: true },
+        { name: '\u200B   حد مثلي   \u200B', value: '3', inline: true },
+      )
+    message.channel.send(embed);
+  }
   if (message.content === 'shelp') {
     const embed = new MessageEmbed()
       .setTitle('قائمة  الأوامر')
@@ -664,6 +676,33 @@ if (message.content == "k8") {
   }).catch(e => console.log(e))
 };
 
+if (message.content == "x1") {
+  if (!message.member.voice.channel) return message.reply("لازم تكون في روم");
+  if (message.guild.me.voice.channel) return message.reply("فيه أغنية شغالة حالياّ");
+
+  message.member.voice.channel.join().then(VoiceConnection => {
+      VoiceConnection.play(ytdl("https://youtu.be/6mnq6pG8fHA")).on("finish", () => VoiceConnection.disconnect());
+      message.reply("شغال...");
+  }).catch(e => console.log(e))
+};
+if (message.content == "x2") {
+  if (!message.member.voice.channel) return message.reply("لازم تكون في روم");
+  if (message.guild.me.voice.channel) return message.reply("فيه أغنية شغالة حالياّ");
+
+  message.member.voice.channel.join().then(VoiceConnection => {
+      VoiceConnection.play(ytdl("https://youtu.be/f3WtJXnZ5q4")).on("finish", () => VoiceConnection.disconnect());
+      message.reply("شغال...");
+  }).catch(e => console.log(e))
+};
+if (message.content == "x3") {
+  if (!message.member.voice.channel) return message.reply("لازم تكون في روم");
+  if (message.guild.me.voice.channel) return message.reply("فيه أغنية شغالة حالياّ");
+
+  message.member.voice.channel.join().then(VoiceConnection => {
+      VoiceConnection.play(ytdl("https://youtu.be/wOjmayCQTC8")).on("finish", () => VoiceConnection.disconnect());
+      message.reply("شغال...");
+  }).catch(e => console.log(e))
+};
 if (message.content == "sdis") {
 
   message.member.voice.channel.join().then(VoiceConnection => {
