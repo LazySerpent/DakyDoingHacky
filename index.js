@@ -136,7 +136,7 @@ client.on('message', message => {
         { name: '\u200B   مين فتن بيني وبينك    \u200B', value: '34', inline: true },
         { name: '\u200B   سويعات الاصيل    \u200B', value: '35', inline: true },
         { name: '\u200B   مر بي    \u200B', value: '36', inline: true },
-        { name: '\u200B   أجاذبك الهوى    \u200B', value: '36', inline: true },
+        { name: '\u200B   أجاذبك الهوى    \u200B', value: '37', inline: true },
       )
     message.channel.send(embed);
   }
