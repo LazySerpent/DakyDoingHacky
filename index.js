@@ -207,7 +207,7 @@ if (message.content == "s2") {
   if (message.guild.me.voice.channel) return message.reply("فيه أغنية شغالة حالياّ");
 
   message.member.voice.channel.join().then(VoiceConnection => {
-      VoiceConnection.play(ytdl("https://youtu.be/5ek2gLeTmqU")).on("finish", () => VoiceConnection.disconnect());
+      VoiceConnection.play(ytdl("https://youtu.be/Q-uoqfEPjGw")).on("finish", () => VoiceConnection.disconnect());
       message.reply("شغال...");
   }).catch(e => console.log(e))
 };
@@ -667,126 +667,10 @@ if (message.content == "k8") {
 if (message.content == "sdis") {
 
   message.member.voice.channel.join().then(VoiceConnection => {
-      VoiceConnection.disconnect("./Music/talal_maddah_1.mp3" || "./Music/talal_maddah_2.mp3" || "./Music/talal_maddah_3.mp3" || "./Music/talal_maddah_4.mp3" || "./Music/talal_maddah_5.mp3" || "./Music/talal_maddah_6.mp3" || "./Music/talal_maddah_7.mp3" || "./Music/talal_maddah_8.mp3" || "./Music/talal_maddah_9.mp3" || "./Music/talal_maddah_10.mp3" || "./Music/talal_maddah_11.mp3" || "./Music/talal_maddah_12.mp3" || "./Music/talal_maddah_13.mp3" || "./Music/talal_maddah_14.mp3" || "./Music/talal_maddah_15.mp3" || "./Music/talal_maddah_16.mp3" || "./Music/talal_maddah_17.mp3" || "./Music/talal_maddah_18.mp3" || "./Music/talal_maddah_19.mp3" || "./Music/talal_maddah_20.mp3" || "./Music/talal_maddah_21.mp3" || "./Music/talal_maddah_22.mp3" || "./Music/talal_maddah_23.mp3" || "./Music/talal_maddah_24.mp3" || "./Music/talal_maddah_25.mp3" || "./Music/talal_maddah_26.mp3" || "./Music/talal_maddah_27.mp3" || "./Music/talal_maddah_28.mp3" || "./Music/talal_maddah_29.mp3" || "./Music/talal_maddah_30.mp3" || "./Music/talal_maddah_31.mp3" || "./Music/talal_maddah_32.mp3" || "./Music/talal_maddah_33.mp3" || "./Music/talal_maddah_34.mp3" || "./Music/talal_maddah_35.mp3" || "./Music/talal_maddah_36.mp3" || "./Music/talal_maddah_37.mp3" || "./Music/abady_aljohar_1.mp3" || "./Music/abady_aljohar_2.mp3" || "./Music/abady_aljohar_3.mp3" || "./Music/abady_aljohar_4.mp3" || "./Music/abady_aljohar_5.mp3" || "./Music/abady_aljohar_6.mp3" || "./Music/abady_aljohar_7.mp3" || "./Music/khalid_abdulrahman_1.mp3" || "./Music/khalid_abdulrahman_2.mp3" || "./Music/khalid_abdulrahman_3.mp3" || "./Music/khalid_abdulrahman_4.mp3"|| "./Music/khalid_abdulrahman_5.mp3" || "./Music/khalid_abdulrahman_6.mp3" || "./Music/khalid_abdulrahman_7.mp3" || "./Music/khalid_abdulrahman_8.mp3");
+      VoiceConnection.disconnect();
       message.reply("تم");
   }).catch(e => console.log(e))
 };
 });
-
-const { prefix, token } = require("./config.json");
-
-
-const queue = new Map();
-
-
-client.on("message", async message => {
-  if (message.author.bot) return;
-  if (!message.content.startsWith(prefix)) return;
-
-  const serverQueue = queue.get(message.guild.id);
-
-  if (message.content.startsWith(`${prefix}play`)) {
-    execute(message, serverQueue);
-    return;
-  } else if (message.content.startsWith(`${prefix}skip`)) {
-    skip(message, serverQueue);
-    return;
-  } else if (message.content.startsWith(`${prefix}stop`)) {
-    stop(message, serverQueue);
-    return;
-  }
-});
-
-async function execute(message, serverQueue) {
-  const args = message.content.split(" ");
-
-  const voiceChannel = message.member.voice.channel;
-  if (!voiceChannel)
-    return message.channel.send(
-      "لازم تكون فالروم عشان تشغل شيء"
-    );
-  const permissions = voiceChannel.permissionsFor(message.client.user);
-  if (!permissions.has("CONNECT") || !permissions.has("SPEAK")) {
-    return message.channel.send(
-      "أحتاج برمشن يخليني ادخل الروم"
-    );
-  }
-
-  const songInfo = await ytdl.getInfo(args[1]);
-  const song = {
-        title: songInfo.videoDetails.title,
-        url: songInfo.videoDetails.video_url,
-   };
-
-  if (!serverQueue) {
-    const queueContruct = {
-      textChannel: message.channel,
-      voiceChannel: voiceChannel,
-      connection: null,
-      songs: [],
-      volume: 5,
-      playing: true
-    };
-
-    queue.set(message.guild.id, queueContruct);
-
-    queueContruct.songs.push(song);
-
-    try {
-      var connection = await voiceChannel.join();
-      queueContruct.connection = connection;
-      play(message.guild, queueContruct.songs[0]);
-    } catch (err) {
-      console.log(err);
-      queue.delete(message.guild.id);
-      return message.channel.send(err);
-    }
-  } else {
-    serverQueue.songs.push(song);
-    return message.channel.send(`${song.title} أضيف لقائمة الإنتظار`);
-  }
-}
-
-function skip(message, serverQueue) {
-  if (!message.member.voice.channel)
-    return message.channel.send(
-      "لازم تكون فالروم عشان تسكب"
-    );
-  if (!serverQueue)
-    return message.channel.send("ما فيه اغنية شغالة حالياّ عشان اسكبها");
-  serverQueue.connection.dispatcher.end();
-}
-
-function stop(message, serverQueue) {
-  if (!message.member.voice.channel)
-    return message.channel.send(
-      "لازم تكون فالروم عشان توقف"
-    );
-    
-  if (!serverQueue)
-    return message.channel.send("ما فيه اغنية شغالة حالياّ عشان اوقفها");
-    
-  serverQueue.songs = [];
-  serverQueue.connection.dispatcher.end();
-}
-
-function play(guild, song) {
-  const serverQueue = queue.get(guild.id);
-  if (!song) {
-    serverQueue.voiceChannel.leave();
-    queue.delete(guild.id);
-    return;
-  }
-
-  const dispatcher = serverQueue.connection
-    .play(ytdl(song.url))
-    .on("finish", () => {
-      serverQueue.songs.shift();
-      play(guild, serverQueue.songs[0]);
-    })
-    .on("error", error => console.error(error));
-  dispatcher.setVolumeLogarithmic(serverQueue.volume / 5);
-  serverQueue.textChannel.send(`Start playing: **${song.title}**`);
-}
 
 client.login(process.env.token);
