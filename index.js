@@ -76,7 +76,10 @@ client.on('ready', () => {
     
   );
 });
+client.on('ready', () => {
+  client.user.setActivity('shelp', { type: 'PLAYING'}).catch(console.error);
 
+})
 
 client.on('message', message => {
   if (message.content === 'slist') {
