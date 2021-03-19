@@ -76,10 +76,6 @@ client.on('ready', () => {
     
   );
 });
-client.on('ready', () => {
-  client.user.setActivity('shelp', { type: 'PLAYING'}).catch(console.error);
-
-})
 
 
 client.on('message', message => {
@@ -205,504 +201,285 @@ client.on('message', message => {
       )
     message.channel.send(embed);
   }
-  if (message.content == "s1") {
-    if (!message.member.voice.channel) return message.reply("لازم تكون في روم");
-    if (message.guild.me.voice.channel) return message.reply("فيه أغنية شغالة حالياّ");
-
+  if(message.content.startsWith('s1')) {
     message.member.voice.channel.join().then(VoiceConnection => {
-        VoiceConnection.play(ytdl("https://youtu.be/LJkLqG5Huls")).on("finish", () => VoiceConnection.disconnect());
-        message.reply("شغال...");
-    }).catch(e => console.log(e))
-};
-if (message.content == "s2") {
-  if (!message.member.voice.channel) return message.reply("لازم تكون في روم");
-  if (message.guild.me.voice.channel) return message.reply("فيه أغنية شغالة حالياّ");
-
-  message.member.voice.channel.join().then(VoiceConnection => {
-      VoiceConnection.play(ytdl("https://youtu.be/Q-uoqfEPjGw")).on("finish", () => VoiceConnection.disconnect());
-      message.reply("شغال...");
+    message.channel.send('splay https://youtu.be/LJkLqG5Huls').then((sentMessage) => sentMessage.edit("شغال"))
   }).catch(e => console.log(e))
-};
-if (message.content == "s3") {
-  if (!message.member.voice.channel) return message.reply("لازم تكون في روم");
-  if (message.guild.me.voice.channel) return message.reply("فيه أغنية شغالة حالياّ");
-
-  message.member.voice.channel.join().then(VoiceConnection => {
-      VoiceConnection.play(ytdl("https://youtu.be/xPujFVqw43c")).on("finish", () => VoiceConnection.disconnect());
-      message.reply("شغال...");
+  }
+  if(message.content.startsWith('s2')) {
+    message.member.voice.channel.join().then(VoiceConnection => {
+    message.channel.send('splay https://youtu.be/Q-uoqfEPjGw').then((sentMessage) => sentMessage.edit("شغال"))
   }).catch(e => console.log(e))
-};
-if (message.content == "s4") {
-  if (!message.member.voice.channel) return message.reply("لازم تكون في روم");
-  if (message.guild.me.voice.channel) return message.reply("فيه أغنية شغالة حالياّ");
-
-  message.member.voice.channel.join().then(VoiceConnection => {
-      VoiceConnection.play(ytdl("https://youtu.be/ido9UlVCsVQ")).on("finish", () => VoiceConnection.disconnect());
-      message.reply("شغال...");
+  }
+  if(message.content.startsWith('s3')) {
+    message.member.voice.channel.join().then(VoiceConnection => {
+    message.channel.send('splay https://youtu.be/xPujFVqw43c').then((sentMessage) => sentMessage.edit("شغال"))
   }).catch(e => console.log(e))
-};
-if (message.content == "s5") {
-  if (!message.member.voice.channel) return message.reply("لازم تكون في روم");
-  if (message.guild.me.voice.channel) return message.reply("فيه أغنية شغالة حالياّ");
-
-  message.member.voice.channel.join().then(VoiceConnection => {
-      VoiceConnection.play(ytdl("https://youtu.be/xXPzsq2j0Gs")).on("finish", () => VoiceConnection.disconnect());
-      message.reply("شغال...");
+  }
+  if(message.content.startsWith('s4')) {
+    message.member.voice.channel.join().then(VoiceConnection => {
+    message.channel.send('splay https://youtu.be/ido9UlVCsVQ').then((sentMessage) => sentMessage.edit("شغال"))
   }).catch(e => console.log(e))
-};
-if (message.content == "s6") {
-  if (!message.member.voice.channel) return message.reply("لازم تكون في روم");
-  if (message.guild.me.voice.channel) return message.reply("فيه أغنية شغالة حالياّ");
-
-  message.member.voice.channel.join().then(VoiceConnection => {
-      VoiceConnection.play(ytdl("https://youtu.be/ydA5g9AKXnM")).on("finish", () => VoiceConnection.disconnect());
-      message.reply("شغال...");
+  }
+  if(message.content.startsWith('s5')) {
+    message.member.voice.channel.join().then(VoiceConnection => {
+    message.channel.send('splay https://youtu.be/xXPzsq2j0Gs').then((sentMessage) => sentMessage.edit("شغال"))
   }).catch(e => console.log(e))
-};
-if (message.content == "s7") {
-  if (!message.member.voice.channel) return message.reply("لازم تكون في روم");
-  if (message.guild.me.voice.channel) return message.reply("فيه أغنية شغالة حالياّ");
-
-  message.member.voice.channel.join().then(VoiceConnection => {
-      VoiceConnection.play(ytdl("https://youtu.be/GHmO5CMR5r8")).on("finish", () => VoiceConnection.disconnect());
-      message.reply("شغال...");
+  }
+  if(message.content.startsWith('s6')) {
+    message.member.voice.channel.join().then(VoiceConnection => {
+    message.channel.send('splay https://youtu.be/ydA5g9AKXnM').then((sentMessage) => sentMessage.edit("شغال"))
   }).catch(e => console.log(e))
-};
-if (message.content == "s8") {
-  if (!message.member.voice.channel) return message.reply("لازم تكون في روم");
-  if (message.guild.me.voice.channel) return message.reply("فيه أغنية شغالة حالياّ");
-
-  message.member.voice.channel.join().then(VoiceConnection => {
-      VoiceConnection.play(ytdl("https://youtu.be/tO3e0jIfwls")).on("finish", () => VoiceConnection.disconnect());
-      message.reply("شغال...");
+  }
+  if(message.content.startsWith('s7')) {
+    message.member.voice.channel.join().then(VoiceConnection => {
+    message.channel.send('splay https://youtu.be/GHmO5CMR5r8').then((sentMessage) => sentMessage.edit("شغال"))
   }).catch(e => console.log(e))
-};
-if (message.content == "s9") {
-  if (!message.member.voice.channel) return message.reply("لازم تكون في روم");
-  if (message.guild.me.voice.channel) return message.reply("فيه أغنية شغالة حالياّ");
-
-  message.member.voice.channel.join().then(VoiceConnection => {
-      VoiceConnection.play(ytdl("https://youtu.be/iCNPU71fjMQ")).on("finish", () => VoiceConnection.disconnect());
-      message.reply("شغال...");
+  }
+  if(message.content.startsWith('s8')) {
+    message.member.voice.channel.join().then(VoiceConnection => {
+    message.channel.send('splay https://youtu.be/tO3e0jIfwls').then((sentMessage) => sentMessage.edit("شغال"))
   }).catch(e => console.log(e))
-};
-if (message.content == "s10") {
-  if (!message.member.voice.channel) return message.reply("لازم تكون في روم");
-  if (message.guild.me.voice.channel) return message.reply("فيه أغنية شغالة حالياّ");
-
-  message.member.voice.channel.join().then(VoiceConnection => {
-      VoiceConnection.play(ytdl("https://youtu.be/xm8ssMV7V80")).on("finish", () => VoiceConnection.disconnect());
-      message.reply("شغال...");
+  }
+  if(message.content.startsWith('s9')) {
+    message.member.voice.channel.join().then(VoiceConnection => {
+    message.channel.send('splay https://youtu.be/iCNPU71fjMQ').then((sentMessage) => sentMessage.edit("شغال"))
   }).catch(e => console.log(e))
-};
-if (message.content == "s11") {
-  if (!message.member.voice.channel) return message.reply("لازم تكون في روم");
-  if (message.guild.me.voice.channel) return message.reply("فيه أغنية شغالة حالياّ");
-
-  message.member.voice.channel.join().then(VoiceConnection => {
-      VoiceConnection.play(ytdl("https://youtu.be/vxemyk0BDxM")).on("finish", () => VoiceConnection.disconnect());
-      message.reply("شغال...");
+  }
+  if(message.content.startsWith('s10')) {
+    message.member.voice.channel.join().then(VoiceConnection => {
+    message.channel.send('splay https://youtu.be/xm8ssMV7V80').then((sentMessage) => sentMessage.edit("شغال"))
   }).catch(e => console.log(e))
-};
-if (message.content == "s12") {
-  if (!message.member.voice.channel) return message.reply("لازم تكون في روم");
-  if (message.guild.me.voice.channel) return message.reply("فيه أغنية شغالة حالياّ");
-
-  message.member.voice.channel.join().then(VoiceConnection => {
-      VoiceConnection.play(ytdl("https://youtu.be/qZS_J6JLQC8")).on("finish", () => VoiceConnection.disconnect());
-      message.reply("شغال...");
+  }
+  if(message.content.startsWith('s11')) {
+    message.member.voice.channel.join().then(VoiceConnection => {
+    message.channel.send('splay https://youtu.be/vxemyk0BDxM').then((sentMessage) => sentMessage.edit("شغال"))
   }).catch(e => console.log(e))
-};
-if (message.content == "s13") {
-  if (!message.member.voice.channel) return message.reply("لازم تكون في روم");
-  if (message.guild.me.voice.channel) return message.reply("فيه أغنية شغالة حالياّ");
-
-  message.member.voice.channel.join().then(VoiceConnection => {
-      VoiceConnection.play(ytdl("https://youtu.be/Tilf7ZuYS5E")).on("finish", () => VoiceConnection.disconnect());
-      message.reply("شغال...");
+  }
+  if(message.content.startsWith('s12')) {
+    message.member.voice.channel.join().then(VoiceConnection => {
+    message.channel.send('splay https://youtu.be/qZS_J6JLQC8').then((sentMessage) => sentMessage.edit("شغال"))
   }).catch(e => console.log(e))
-};
-if (message.content == "s14") {
-  if (!message.member.voice.channel) return message.reply("لازم تكون في روم");
-  if (message.guild.me.voice.channel) return message.reply("فيه أغنية شغالة حالياّ");
-
-  message.member.voice.channel.join().then(VoiceConnection => {
-      VoiceConnection.play(ytdl("https://youtu.be/6o2r-6L6pTY")).on("finish", () => VoiceConnection.disconnect());
-      message.reply("شغال...");
+  }
+  if(message.content.startsWith('s13')) {
+    message.member.voice.channel.join().then(VoiceConnection => {
+    message.channel.send('splay https://youtu.be/Tilf7ZuYS5E').then((sentMessage) => sentMessage.edit("شغال"))
   }).catch(e => console.log(e))
-};
-if (message.content == "s15") {
-  if (!message.member.voice.channel) return message.reply("لازم تكون في روم");
-  if (message.guild.me.voice.channel) return message.reply("فيه أغنية شغالة حالياّ");
-
-  message.member.voice.channel.join().then(VoiceConnection => {
-      VoiceConnection.play(ytdl("https://youtu.be/usTenpr7Vbk")).on("finish", () => VoiceConnection.disconnect());
-      message.reply("شغال...");
+  }
+  if(message.content.startsWith('s14')) {
+    message.member.voice.channel.join().then(VoiceConnection => {
+    message.channel.send('splay https://youtu.be/6o2r-6L6pTY').then((sentMessage) => sentMessage.edit("شغال"))
   }).catch(e => console.log(e))
-};
-if (message.content == "s16") {
-  if (!message.member.voice.channel) return message.reply("لازم تكون في روم");
-  if (message.guild.me.voice.channel) return message.reply("فيه أغنية شغالة حالياّ");
-
-  message.member.voice.channel.join().then(VoiceConnection => {
-      VoiceConnection.play(ytdl("https://youtu.be/M6LDok-aN34")).on("finish", () => VoiceConnection.disconnect());
-      message.reply("شغال...");
+  }
+  if(message.content.startsWith('s15')) {
+    message.member.voice.channel.join().then(VoiceConnection => {
+    message.channel.send('splay https://youtu.be/usTenpr7Vbk').then((sentMessage) => sentMessage.edit("شغال"))
   }).catch(e => console.log(e))
-};
-if (message.content == "s17") {
-  if (!message.member.voice.channel) return message.reply("لازم تكون في روم");
-  if (message.guild.me.voice.channel) return message.reply("فيه أغنية شغالة حالياّ");
-
-  message.member.voice.channel.join().then(VoiceConnection => {
-      VoiceConnection.play(ytdl("https://youtu.be/8H3an-qzJfA")).on("finish", () => VoiceConnection.disconnect());
-      message.reply("شغال...");
+  }
+  if(message.content.startsWith('s16')) {
+    message.member.voice.channel.join().then(VoiceConnection => {
+    message.channel.send('splay https://youtu.be/M6LDok-aN34').then((sentMessage) => sentMessage.edit("شغال"))
   }).catch(e => console.log(e))
-};
-if (message.content == "s18") {
-  if (!message.member.voice.channel) return message.reply("لازم تكون في روم");
-  if (message.guild.me.voice.channel) return message.reply("فيه أغنية شغالة حالياّ");
-
-  message.member.voice.channel.join().then(VoiceConnection => {
-      VoiceConnection.play(ytdl("https://youtu.be/kPUXo2Vuvwk")).on("finish", () => VoiceConnection.disconnect());
-      message.reply("شغال...");
+  }
+  if(message.content.startsWith('s17')) {
+    message.member.voice.channel.join().then(VoiceConnection => {
+    message.channel.send('splay https://youtu.be/8H3an-qzJfA').then((sentMessage) => sentMessage.edit("شغال"))
   }).catch(e => console.log(e))
-};
-if (message.content == "s19") {
-  if (!message.member.voice.channel) return message.reply("لازم تكون في روم");
-  if (message.guild.me.voice.channel) return message.reply("فيه أغنية شغالة حالياّ");
-
-  message.member.voice.channel.join().then(VoiceConnection => {
-      VoiceConnection.play(ytdl("https://youtu.be/B65s1h-Wt8E")).on("finish", () => VoiceConnection.disconnect());
-      message.reply("شغال...");
+  }
+  if(message.content.startsWith('s18')) {
+    message.member.voice.channel.join().then(VoiceConnection => {
+    message.channel.send('splay https://youtu.be/kPUXo2Vuvwk').then((sentMessage) => sentMessage.edit("شغال"))
   }).catch(e => console.log(e))
-};
-if (message.content == "s20") {
-  if (!message.member.voice.channel) return message.reply("لازم تكون في روم");
-  if (message.guild.me.voice.channel) return message.reply("فيه أغنية شغالة حالياّ");
-
-  message.member.voice.channel.join().then(VoiceConnection => {
-      VoiceConnection.play(ytdl("https://youtu.be/iguiWTPCLAA")).on("finish", () => VoiceConnection.disconnect());
-      message.reply("شغال...");
+  }
+  if(message.content.startsWith('s19')) {
+    message.member.voice.channel.join().then(VoiceConnection => {
+    message.channel.send('splay https://youtu.be/B65s1h-Wt8E').then((sentMessage) => sentMessage.edit("شغال"))
   }).catch(e => console.log(e))
-};
-if (message.content == "s21") {
-  if (!message.member.voice.channel) return message.reply("لازم تكون في روم");
-  if (message.guild.me.voice.channel) return message.reply("فيه أغنية شغالة حالياّ");
-
-  message.member.voice.channel.join().then(VoiceConnection => {
-      VoiceConnection.play(ytdl("https://youtu.be/Hfyw3IUbQYE")).on("finish", () => VoiceConnection.disconnect());
-      message.reply("شغال...");
+  }
+  if(message.content.startsWith('s20')) {
+    message.member.voice.channel.join().then(VoiceConnection => {
+    message.channel.send('splay https://youtu.be/iguiWTPCLAA').then((sentMessage) => sentMessage.edit("شغال"))
   }).catch(e => console.log(e))
-};
-if (message.content == "s22") {
-  if (!message.member.voice.channel) return message.reply("لازم تكون في روم");
-  if (message.guild.me.voice.channel) return message.reply("فيه أغنية شغالة حالياّ");
-
-  message.member.voice.channel.join().then(VoiceConnection => {
-      VoiceConnection.play(ytdl("https://youtu.be/jB2gSM_MDt4")).on("finish", () => VoiceConnection.disconnect());
-      message.reply("شغال...");
+  }
+  if(message.content.startsWith('s21')) {
+    message.member.voice.channel.join().then(VoiceConnection => {
+    message.channel.send('splay https://youtu.be/Hfyw3IUbQYE').then((sentMessage) => sentMessage.edit("شغال"))
   }).catch(e => console.log(e))
-};
-if (message.content == "s23") {
-  if (!message.member.voice.channel) return message.reply("لازم تكون في روم");
-  if (message.guild.me.voice.channel) return message.reply("فيه أغنية شغالة حالياّ");
-
-  message.member.voice.channel.join().then(VoiceConnection => {
-      VoiceConnection.play(ytdl("https://youtu.be/MnVdicNAXHc")).on("finish", () => VoiceConnection.disconnect());
-      message.reply("شغال...");
+  }
+  if(message.content.startsWith('s22')) {
+    message.member.voice.channel.join().then(VoiceConnection => {
+    message.channel.send('splay https://youtu.be/jB2gSM_MDt4').then((sentMessage) => sentMessage.edit("شغال"))
   }).catch(e => console.log(e))
-};
-if (message.content == "s24") {
-  if (!message.member.voice.channel) return message.reply("لازم تكون في روم");
-  if (message.guild.me.voice.channel) return message.reply("فيه أغنية شغالة حالياّ");
-
-  message.member.voice.channel.join().then(VoiceConnection => {
-      VoiceConnection.play(ytdl("https://youtu.be/yKUj72e1T6Y")).on("finish", () => VoiceConnection.disconnect());
-      message.reply("شغال...");
+  }
+  if(message.content.startsWith('s23')) {
+    message.member.voice.channel.join().then(VoiceConnection => {
+    message.channel.send('splay https://youtu.be/MnVdicNAXHc').then((sentMessage) => sentMessage.edit("شغال"))
   }).catch(e => console.log(e))
-};
-if (message.content == "s25") {
-  if (!message.member.voice.channel) return message.reply("لازم تكون في روم");
-  if (message.guild.me.voice.channel) return message.reply("فيه أغنية شغالة حالياّ");
-
-  message.member.voice.channel.join().then(VoiceConnection => {
-      VoiceConnection.play(ytdl("https://youtu.be/zb-jTZMwsvA")).on("finish", () => VoiceConnection.disconnect());
-      message.reply("شغال...");
+  }
+  if(message.content.startsWith('s24')) {
+    message.member.voice.channel.join().then(VoiceConnection => {
+    message.channel.send('splay https://youtu.be/yKUj72e1T6Y').then((sentMessage) => sentMessage.edit("شغال"))
   }).catch(e => console.log(e))
-};
-if (message.content == "s26") {
-  if (!message.member.voice.channel) return message.reply("لازم تكون في روم");
-  if (message.guild.me.voice.channel) return message.reply("فيه أغنية شغالة حالياّ");
-
-  message.member.voice.channel.join().then(VoiceConnection => {
-      VoiceConnection.play(ytdl("https://youtu.be/UYfIctTUjG0")).on("finish", () => VoiceConnection.disconnect());
-      message.reply("شغال...");
+  }
+  if(message.content.startsWith('s25')) {
+    message.member.voice.channel.join().then(VoiceConnection => {
+    message.channel.send('splay https://youtu.be/zb-jTZMwsvA').then((sentMessage) => sentMessage.edit("شغال"))
   }).catch(e => console.log(e))
-};
-if (message.content == "s27") {
-  if (!message.member.voice.channel) return message.reply("لازم تكون في روم");
-  if (message.guild.me.voice.channel) return message.reply("فيه أغنية شغالة حالياّ");
-
-  message.member.voice.channel.join().then(VoiceConnection => {
-      VoiceConnection.play(ytdl("https://youtu.be/N7vJLzCP1AI")).on("finish", () => VoiceConnection.disconnect());
-      message.reply("شغال...");
+  }
+  if(message.content.startsWith('s26')) {
+    message.member.voice.channel.join().then(VoiceConnection => {
+    message.channel.send('splay https://youtu.be/UYfIctTUjG0').then((sentMessage) => sentMessage.edit("شغال"))
   }).catch(e => console.log(e))
-};
-if (message.content == "s28") {
-  if (!message.member.voice.channel) return message.reply("لازم تكون في روم");
-  if (message.guild.me.voice.channel) return message.reply("فيه أغنية شغالة حالياّ");
-
-  message.member.voice.channel.join().then(VoiceConnection => {
-      VoiceConnection.play(ytdl("https://youtu.be/ItdePts9mjg")).on("finish", () => VoiceConnection.disconnect());
-      message.reply("شغال...");
+  }
+  if(message.content.startsWith('s27')) {
+    message.member.voice.channel.join().then(VoiceConnection => {
+    message.channel.send('splay https://youtu.be/N7vJLzCP1AI').then((sentMessage) => sentMessage.edit("شغال"))
   }).catch(e => console.log(e))
-};
-if (message.content == "s29") {
-  if (!message.member.voice.channel) return message.reply("لازم تكون في روم");
-  if (message.guild.me.voice.channel) return message.reply("فيه أغنية شغالة حالياّ");
-
-  message.member.voice.channel.join().then(VoiceConnection => {
-      VoiceConnection.play(ytdl("https://youtu.be/zRTIi-YWY9U")).on("finish", () => VoiceConnection.disconnect());
-      message.reply("شغال...");
+  }
+  if(message.content.startsWith('s28')) {
+    message.member.voice.channel.join().then(VoiceConnection => {
+    message.channel.send('splay https://youtu.be/ItdePts9mjg').then((sentMessage) => sentMessage.edit("شغال"))
   }).catch(e => console.log(e))
-};
-if (message.content == "s30") {
-  if (!message.member.voice.channel) return message.reply("لازم تكون في روم");
-  if (message.guild.me.voice.channel) return message.reply("فيه أغنية شغالة حالياّ");
-
-  message.member.voice.channel.join().then(VoiceConnection => {
-      VoiceConnection.play(ytdl("https://youtu.be/jPg25kpiOH4")).on("finish", () => VoiceConnection.disconnect());
-      message.reply("شغال...");
+  }
+  if(message.content.startsWith('s29')) {
+    message.member.voice.channel.join().then(VoiceConnection => {
+    message.channel.send('splay https://youtu.be/zRTIi-YWY9U').then((sentMessage) => sentMessage.edit("شغال"))
   }).catch(e => console.log(e))
-};
-if (message.content == "s31") {
-  if (!message.member.voice.channel) return message.reply("لازم تكون في روم");
-  if (message.guild.me.voice.channel) return message.reply("فيه أغنية شغالة حالياّ");
-
-  message.member.voice.channel.join().then(VoiceConnection => {
-      VoiceConnection.play(ytdl("https://youtu.be/gdsGaNMGXv4")).on("finish", () => VoiceConnection.disconnect());
-      message.reply("شغال...");
+  }
+  if(message.content.startsWith('s30')) {
+    message.member.voice.channel.join().then(VoiceConnection => {
+    message.channel.send('splay https://youtu.be/jPg25kpiOH4').then((sentMessage) => sentMessage.edit("شغال"))
   }).catch(e => console.log(e))
-};
-if (message.content == "s32") {
-  if (!message.member.voice.channel) return message.reply("لازم تكون في روم");
-  if (message.guild.me.voice.channel) return message.reply("فيه أغنية شغالة حالياّ");
-
-  message.member.voice.channel.join().then(VoiceConnection => {
-      VoiceConnection.play(ytdl("https://youtu.be/F4saYZDQszQ")).on("finish", () => VoiceConnection.disconnect());
-      message.reply("شغال...");
+  }
+  if(message.content.startsWith('s31')) {
+    message.member.voice.channel.join().then(VoiceConnection => {
+    message.channel.send('splay https://youtu.be/gdsGaNMGXv4').then((sentMessage) => sentMessage.edit("شغال"))
   }).catch(e => console.log(e))
-};
-if (message.content == "s33") {
-  if (!message.member.voice.channel) return message.reply("لازم تكون في روم");
-  if (message.guild.me.voice.channel) return message.reply("فيه أغنية شغالة حالياّ");
-
-  message.member.voice.channel.join().then(VoiceConnection => {
-      VoiceConnection.play(ytdl("https://youtu.be/cJaAF7f1yrA")).on("finish", () => VoiceConnection.disconnect());
-      message.reply("شغال...");
+  }
+  if(message.content.startsWith('s32')) {
+    message.member.voice.channel.join().then(VoiceConnection => {
+    message.channel.send('splay https://youtu.be/F4saYZDQszQ').then((sentMessage) => sentMessage.edit("شغال"))
   }).catch(e => console.log(e))
-};
-if (message.content == "s34") {
-  if (!message.member.voice.channel) return message.reply("لازم تكون في روم");
-  if (message.guild.me.voice.channel) return message.reply("فيه أغنية شغالة حالياّ");
-
-  message.member.voice.channel.join().then(VoiceConnection => {
-      VoiceConnection.play(ytdl("https://youtu.be/zCZ4Pwao5WE")).on("finish", () => VoiceConnection.disconnect());
-      message.reply("شغال...");
+  }
+  if(message.content.startsWith('s33')) {
+    message.member.voice.channel.join().then(VoiceConnection => {
+    message.channel.send('splay https://youtu.be/cJaAF7f1yrA').then((sentMessage) => sentMessage.edit("شغال"))
   }).catch(e => console.log(e))
-};
-if (message.content == "s35") {
-  if (!message.member.voice.channel) return message.reply("لازم تكون في روم");
-  if (message.guild.me.voice.channel) return message.reply("فيه أغنية شغالة حالياّ");
-
-  message.member.voice.channel.join().then(VoiceConnection => {
-      VoiceConnection.play(ytdl("https://youtu.be/CFgTwkP_xYo")).on("finish", () => VoiceConnection.disconnect());
-      message.reply("شغال...");
+  }
+  if(message.content.startsWith('s34')) {
+    message.member.voice.channel.join().then(VoiceConnection => {
+    message.channel.send('splay https://youtu.be/zCZ4Pwao5WE').then((sentMessage) => sentMessage.edit("شغال"))
   }).catch(e => console.log(e))
-};
-if (message.content == "s36") {
-  if (!message.member.voice.channel) return message.reply("لازم تكون في روم");
-  if (message.guild.me.voice.channel) return message.reply("فيه أغنية شغالة حالياّ");
-
-  message.member.voice.channel.join().then(VoiceConnection => {
-      VoiceConnection.play(ytdl("https://youtu.be/7dDavyj4tUI")).on("finish", () => VoiceConnection.disconnect());
-      message.reply("شغال...");
+  }
+  if(message.content.startsWith('s35')) {
+    message.member.voice.channel.join().then(VoiceConnection => {
+    message.channel.send('splay https://youtu.be/CFgTwkP_xYo').then((sentMessage) => sentMessage.edit("شغال"))
   }).catch(e => console.log(e))
-};
-if (message.content == "s37") {
-  if (!message.member.voice.channel) return message.reply("لازم تكون في روم");
-  if (message.guild.me.voice.channel) return message.reply("فيه أغنية شغالة حالياّ");
-
-  message.member.voice.channel.join().then(VoiceConnection => {
-      VoiceConnection.play(ytdl("https://youtu.be/KVGFfd65TKQ")).on("finish", () => VoiceConnection.disconnect());
-      message.reply("شغال...");
+  }
+  if(message.content.startsWith('s36')) {
+    message.member.voice.channel.join().then(VoiceConnection => {
+    message.channel.send('splay https://youtu.be/7dDavyj4tUI').then((sentMessage) => sentMessage.edit("شغال"))
   }).catch(e => console.log(e))
-};
-
-if (message.content == "a1") {
-  if (!message.member.voice.channel) return message.reply("لازم تكون في روم");
-  if (message.guild.me.voice.channel) return message.reply("فيه أغنية شغالة حالياّ");
-
-  message.member.voice.channel.join().then(VoiceConnection => {
-      VoiceConnection.play(ytdl("https://youtu.be/axS66pSVyas")).on("finish", () => VoiceConnection.disconnect());
-      message.reply("شغال...");
+  }
+  if(message.content.startsWith('s37')) {
+    message.member.voice.channel.join().then(VoiceConnection => {
+    message.channel.send('splay https://youtu.be/KVGFfd65TKQ').then((sentMessage) => sentMessage.edit("شغال"))
   }).catch(e => console.log(e))
-};
-if (message.content == "a2") {
-  if (!message.member.voice.channel) return message.reply("لازم تكون في روم");
-  if (message.guild.me.voice.channel) return message.reply("فيه أغنية شغالة حالياّ");
+  }
 
-  message.member.voice.channel.join().then(VoiceConnection => {
-      VoiceConnection.play(ytdl("https://youtu.be/Nq9ZH2KtugA")).on("finish", () => VoiceConnection.disconnect());
-      message.reply("شغال...");
+  if(message.content.startsWith('a1')) {
+    message.member.voice.channel.join().then(VoiceConnection => {
+    message.channel.send('splay https://youtu.be/axS66pSVyas').then((sentMessage) => sentMessage.edit("شغال"))
   }).catch(e => console.log(e))
-};
-if (message.content == "a3") {
-  if (!message.member.voice.channel) return message.reply("لازم تكون في روم");
-  if (message.guild.me.voice.channel) return message.reply("فيه أغنية شغالة حالياّ");
-
-  message.member.voice.channel.join().then(VoiceConnection => {
-      VoiceConnection.play(ytdl("https://youtu.be/FHtvNU_X2Xk")).on("finish", () => VoiceConnection.disconnect());
-      message.reply("شغال...");
+  }
+  if(message.content.startsWith('a2')) {
+    message.member.voice.channel.join().then(VoiceConnection => {
+    message.channel.send('splay https://youtu.be/Nq9ZH2KtugA').then((sentMessage) => sentMessage.edit("شغال"))
   }).catch(e => console.log(e))
-};
-if (message.content == "a4") {
-  if (!message.member.voice.channel) return message.reply("لازم تكون في روم");
-  if (message.guild.me.voice.channel) return message.reply("فيه أغنية شغالة حالياّ");
-
-  message.member.voice.channel.join().then(VoiceConnection => {
-      VoiceConnection.play(ytdl("https://youtu.be/CsPC9pUOXKo")).on("finish", () => VoiceConnection.disconnect());
-      message.reply("شغال...");
+  }
+  if(message.content.startsWith('a3')) {
+    message.member.voice.channel.join().then(VoiceConnection => {
+    message.channel.send('splay https://youtu.be/FHtvNU_X2Xk').then((sentMessage) => sentMessage.edit("شغال"))
   }).catch(e => console.log(e))
-};
-if (message.content == "a5") {
-  if (!message.member.voice.channel) return message.reply("لازم تكون في روم");
-  if (message.guild.me.voice.channel) return message.reply("فيه أغنية شغالة حالياّ");
-
-  message.member.voice.channel.join().then(VoiceConnection => {
-      VoiceConnection.play(ytdl("https://youtu.be/F0uQiVwwaBo")).on("finish", () => VoiceConnection.disconnect());
-      message.reply("شغال...");
+  }
+  if(message.content.startsWith('a4')) {
+    message.member.voice.channel.join().then(VoiceConnection => {
+    message.channel.send('splay https://youtu.be/CsPC9pUOXKo').then((sentMessage) => sentMessage.edit("شغال"))
   }).catch(e => console.log(e))
-};
-if (message.content == "a6") {
-  if (!message.member.voice.channel) return message.reply("لازم تكون في روم");
-  if (message.guild.me.voice.channel) return message.reply("فيه أغنية شغالة حالياّ");
-
-  message.member.voice.channel.join().then(VoiceConnection => {
-      VoiceConnection.play(ytdl("https://youtu.be/cv0XDa4mC9U")).on("finish", () => VoiceConnection.disconnect());
-      message.reply("شغال...");
+  }
+  if(message.content.startsWith('a5')) {
+    message.member.voice.channel.join().then(VoiceConnection => {
+    message.channel.send('splay https://youtu.be/F0uQiVwwaBo').then((sentMessage) => sentMessage.edit("شغال"))
   }).catch(e => console.log(e))
-};
-if (message.content == "a7") {
-  if (!message.member.voice.channel) return message.reply("لازم تكون في روم");
-  if (message.guild.me.voice.channel) return message.reply("فيه أغنية شغالة حالياّ");
-
-  message.member.voice.channel.join().then(VoiceConnection => {
-      VoiceConnection.play(ytdl("https://youtu.be/OWpnybV2-JE")).on("finish", () => VoiceConnection.disconnect());
-      message.reply("شغال...");
+  }
+  if(message.content.startsWith('a6')) {
+    message.member.voice.channel.join().then(VoiceConnection => {
+    message.channel.send('splay https://youtu.be/cv0XDa4mC9U').then((sentMessage) => sentMessage.edit("شغال"))
   }).catch(e => console.log(e))
-};
-
-if (message.content == "k1") {
-  if (!message.member.voice.channel) return message.reply("لازم تكون في روم");
-  if (message.guild.me.voice.channel) return message.reply("فيه أغنية شغالة حالياّ");
-
-  message.member.voice.channel.join().then(VoiceConnection => {
-      VoiceConnection.play(ytdl("https://youtu.be/FHkPM_oeETg")).on("finish", () => VoiceConnection.disconnect());
-      message.reply("شغال...");
+  }
+  if(message.content.startsWith('a7')) {
+    message.member.voice.channel.join().then(VoiceConnection => {
+    message.channel.send('splay https://youtu.be/OWpnybV2-JE').then((sentMessage) => sentMessage.edit("شغال"))
   }).catch(e => console.log(e))
-};
-if (message.content == "k2") {
-  if (!message.member.voice.channel) return message.reply("لازم تكون في روم");
-  if (message.guild.me.voice.channel) return message.reply("فيه أغنية شغالة حالياّ");
+  }
 
+if(message.content.startsWith('k1')) {
   message.member.voice.channel.join().then(VoiceConnection => {
-      VoiceConnection.play(ytdl("https://youtu.be/C1wrjE4FS2Q")).on("finish", () => VoiceConnection.disconnect());
-      message.reply("شغال...");
+    message.channel.send('splay https://youtu.be/FHkPM_oeETg').then((sentMessage) => sentMessage.edit("شغال"))
   }).catch(e => console.log(e))
-};
-if (message.content == "k3") {
-  if (!message.member.voice.channel) return message.reply("لازم تكون في روم");
-  if (message.guild.me.voice.channel) return message.reply("فيه أغنية شغالة حالياّ");
-
+}
+if(message.content.startsWith('k2')) {
   message.member.voice.channel.join().then(VoiceConnection => {
-      VoiceConnection.play(ytdl("https://youtu.be/Z7b37zgCQow")).on("finish", () => VoiceConnection.disconnect());
-      message.reply("شغال...");
+    message.channel.send('splay https://youtu.be/C1wrjE4FS2Q').then((sentMessage) => sentMessage.edit("شغال"))
   }).catch(e => console.log(e))
-};
-if (message.content == "k4") {
-  if (!message.member.voice.channel) return message.reply("لازم تكون في روم");
-  if (message.guild.me.voice.channel) return message.reply("فيه أغنية شغالة حالياّ");
-
+}
+if(message.content.startsWith('k3')) {
   message.member.voice.channel.join().then(VoiceConnection => {
-      VoiceConnection.play(ytdl("https://youtu.be/l_iU1Jlnajg")).on("finish", () => VoiceConnection.disconnect());
-      message.reply("شغال...");
+    message.channel.send('splay https://youtu.be/Z7b37zgCQow').then((sentMessage) => sentMessage.edit("شغال"))
   }).catch(e => console.log(e))
-};
-if (message.content == "k5") {
-  if (!message.member.voice.channel) return message.reply("لازم تكون في روم");
-  if (message.guild.me.voice.channel) return message.reply("فيه أغنية شغالة حالياّ");
-
+}
+if(message.content.startsWith('k4')) {
   message.member.voice.channel.join().then(VoiceConnection => {
-      VoiceConnection.play(ytdl("https://youtu.be/Tr3A9vUDYg4")).on("finish", () => VoiceConnection.disconnect());
-      message.reply("شغال...");
+    message.channel.send('splay https://youtu.be/l_iU1Jlnajg').then((sentMessage) => sentMessage.edit("شغال"))
   }).catch(e => console.log(e))
-};
-if (message.content == "k6") {
-  if (!message.member.voice.channel) return message.reply("لازم تكون في روم");
-  if (message.guild.me.voice.channel) return message.reply("فيه أغنية شغالة حالياّ");
-
+}
+if(message.content.startsWith('k5')) {
   message.member.voice.channel.join().then(VoiceConnection => {
-      VoiceConnection.play(ytdl("https://youtu.be/zUt-qN7nPN4")).on("finish", () => VoiceConnection.disconnect());
-      message.reply("شغال...");
+    message.channel.send('splay https://youtu.be/Tr3A9vUDYg4').then((sentMessage) => sentMessage.edit("شغال"))
   }).catch(e => console.log(e))
-};
-if (message.content == "k7") {
-  if (!message.member.voice.channel) return message.reply("لازم تكون في روم");
-  if (message.guild.me.voice.channel) return message.reply("فيه أغنية شغالة حالياّ");
-
+}
+if(message.content.startsWith('k6')) {
   message.member.voice.channel.join().then(VoiceConnection => {
-      VoiceConnection.play(ytdl("https://youtu.be/RH6Ov-cqofY")).on("finish", () => VoiceConnection.disconnect());
-      message.reply("شغال...");
+    message.channel.send('splay https://youtu.be/zUt-qN7nPN4').then((sentMessage) => sentMessage.edit("شغال"))
   }).catch(e => console.log(e))
-};
-if (message.content == "k8") {
-  if (!message.member.voice.channel) return message.reply("لازم تكون في روم");
-  if (message.guild.me.voice.channel) return message.reply("فيه أغنية شغالة حالياّ");
-
+}
+if(message.content.startsWith('k7')) {
   message.member.voice.channel.join().then(VoiceConnection => {
-      VoiceConnection.play(ytdl("https://youtu.be/MqE_IBIz0O8")).on("finish", () => VoiceConnection.disconnect());
-      message.reply("شغال...");
+    message.channel.send('splay https://youtu.be/RH6Ov-cqofY').then((sentMessage) => sentMessage.edit("شغال"))
   }).catch(e => console.log(e))
-};
-
-if (message.content == "x1") {
-  if (!message.member.voice.channel) return message.reply("لازم تكون في روم");
-  if (message.guild.me.voice.channel) return message.reply("فيه أغنية شغالة حالياّ");
-
+}
+if(message.content.startsWith('k8')) {
   message.member.voice.channel.join().then(VoiceConnection => {
-      VoiceConnection.play(ytdl("https://youtu.be/6mnq6pG8fHA")).on("finish", () => VoiceConnection.disconnect());
-      message.reply("شغال...");
+    message.channel.send('splay https://youtu.be/MqE_IBIz0O8').then((sentMessage) => sentMessage.edit("شغال"))
   }).catch(e => console.log(e))
-};
-if (message.content == "x2") {
-  if (!message.member.voice.channel) return message.reply("لازم تكون في روم");
-  if (message.guild.me.voice.channel) return message.reply("فيه أغنية شغالة حالياّ");
+}
 
+if(message.content.startsWith('x1')) {
   message.member.voice.channel.join().then(VoiceConnection => {
-      VoiceConnection.play(ytdl("https://youtu.be/f3WtJXnZ5q4")).on("finish", () => VoiceConnection.disconnect());
-      message.reply("شغال...");
+    message.channel.send('splay https://youtu.be/6mnq6pG8fHA').then((sentMessage) => sentMessage.edit("شغال"))
   }).catch(e => console.log(e))
-};
-if (message.content == "x3") {
-  if (!message.member.voice.channel) return message.reply("لازم تكون في روم");
-  if (message.guild.me.voice.channel) return message.reply("فيه أغنية شغالة حالياّ");
+}
+if(message.content.startsWith('x2')) {
+  message.member.voice.channel.join().then(VoiceConnection => {
+    message.channel.send('splay https://youtu.be/wOjmayCQTC8').then((sentMessage) => sentMessage.edit("شغال"))
+  }).catch(e => console.log(e))
+}
+if(message.content.startsWith('x3')) {
+  message.member.voice.channel.join().then(VoiceConnection => {
+    message.channel.send('splay https://youtu.be/f3WtJXnZ5q4').then((sentMessage) => sentMessage.edit("شغال"))
+  }).catch(e => console.log(e))
+}
 
-  message.member.voice.channel.join().then(VoiceConnection => {
-      VoiceConnection.play(ytdl("https://youtu.be/wOjmayCQTC8")).on("finish", () => VoiceConnection.disconnect());
-      message.reply("شغال...");
-  }).catch(e => console.log(e))
-};
 if (message.content == "sdis") {
 
   message.member.voice.channel.join().then(VoiceConnection => {
@@ -710,6 +487,135 @@ if (message.content == "sdis") {
       message.reply("تم");
   }).catch(e => console.log(e))
 };
+
+if(message.content.startsWith('xtest')) {
+  message.channel.send('s1');
+}
 });
+
+
+client.on('message', message => {
+  if(message.content.startsWith('v1')) {
+    message.member.voice.channel.join().then(VoiceConnection => {
+    message.channel.send('splay https://youtu.be/LJkLqG5Huls').then((sentMessage) => sentMessage.edit("شغال"))
+  }).catch(e => console.log(e))
+  }
+});
+
+
+const { prefix, token } = require("./config.json");
+
+
+const queue = new Map();
+
+
+client.on("message", async message => {
+  if (!message.content.startsWith(prefix)) return;
+
+  const serverQueue = queue.get(message.guild.id);
+
+  if (message.content.startsWith(`${prefix}play`)) {
+    execute(message, serverQueue);
+    return;
+  } else if (message.content.startsWith(`${prefix}skip`)) {
+    skip(message, serverQueue);
+    return;
+  } else if (message.content.startsWith(`${prefix}dis`)) {
+    stop(message, serverQueue);
+    return;
+  }
+});
+
+async function execute(message, serverQueue) {
+  const args = message.content.split(" ");
+
+  const voiceChannel = message.member.voice.channel;
+  if (!voiceChannel)
+    return message.channel.send(
+      "لازم تكون فالروم عشان تشغل شيء"
+    );
+  const permissions = voiceChannel.permissionsFor(message.client.user);
+  if (!permissions.has("CONNECT") || !permissions.has("SPEAK")) {
+    return message.channel.send(
+      "أحتاج برمشن يخليني ادخل الروم"
+    );
+  }
+
+  const songInfo = await ytdl.getInfo(args[1]);
+  const song = {
+        title: songInfo.videoDetails.title,
+        url: songInfo.videoDetails.video_url,
+   };
+
+  if (!serverQueue) {
+    const queueContruct = {
+      textChannel: message.channel,
+      voiceChannel: voiceChannel,
+      connection: null,
+      songs: [],
+      volume: 5,
+      playing: true
+    };
+
+    queue.set(message.guild.id, queueContruct);
+
+    queueContruct.songs.push(song);
+
+    try {
+      var connection = await voiceChannel.join();
+      queueContruct.connection = connection;
+      play(message.guild, queueContruct.songs[0]);
+    } catch (err) {
+      console.log(err);
+      queue.delete(message.guild.id);
+      return message.channel.send(err);
+    }
+  } else {
+    serverQueue.songs.push(song);
+    return message.channel.send(`${song.title} أضيف لقائمة الإنتظار`);
+  }
+}
+
+function skip(message, serverQueue) {
+  if (!message.member.voice.channel)
+    return message.channel.send(
+      "لازم تكون فالروم عشان تسكب"
+    );
+  if (!serverQueue)
+    return message.channel.send("ما فيه اغنية شغالة حالياّ عشان اسكبها");
+  serverQueue.connection.dispatcher.end();
+}
+
+function stop(message, serverQueue) {
+  if (!message.member.voice.channel)
+    return message.channel.send(
+      "لازم تكون فالروم عشان توقف"
+    );
+    
+  if (!serverQueue)
+    return message.channel.send("ما فيه اغنية شغالة حالياّ عشان اوقفها");
+    
+  serverQueue.songs = [];
+  serverQueue.connection.dispatcher.end();
+}
+
+function play(guild, song) {
+  const serverQueue = queue.get(guild.id);
+  if (!song) {
+    serverQueue.voiceChannel.leave();
+    queue.delete(guild.id);
+    return;
+  }
+
+  const dispatcher = serverQueue.connection
+    .play(ytdl(song.url))
+    .on("finish", () => {
+      serverQueue.songs.shift();
+      play(guild, serverQueue.songs[0]);
+    })
+    .on("error", error => console.error(error));
+  dispatcher.setVolumeLogarithmic(serverQueue.volume / 5);
+  serverQueue.textChannel.send(``);
+}
 
 client.login(process.env.token);
