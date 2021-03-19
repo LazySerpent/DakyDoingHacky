@@ -208,280 +208,280 @@ client.on('message', message => {
     message.member.voice.channel.join().then(VoiceConnection => {
     message.channel.send('splay https://youtu.be/LJkLqG5Huls').then((sentMessage) => sentMessage.delete())
   }).catch(e => console.log(e))
-  }
+  };
   if(message.content.startsWith('s2')) {
     message.member.voice.channel.join().then(VoiceConnection => {
     message.channel.send('splay https://youtu.be/Q-uoqfEPjGw').then((sentMessage) => sentMessage.delete())
   }).catch(e => console.log(e))
-  }
+  };
   if(message.content.startsWith('s3')) {
     message.member.voice.channel.join().then(VoiceConnection => {
     message.channel.send('splay https://youtu.be/xPujFVqw43c').then((sentMessage) => sentMessage.delete())
   }).catch(e => console.log(e))
-  }
+  };
   if(message.content.startsWith('s4')) {
     message.member.voice.channel.join().then(VoiceConnection => {
     message.channel.send('splay https://youtu.be/ido9UlVCsVQ').then((sentMessage) => sentMessage.delete())
   }).catch(e => console.log(e))
-  }
+  };
   if(message.content.startsWith('s5')) {
     message.member.voice.channel.join().then(VoiceConnection => {
     message.channel.send('splay https://youtu.be/xXPzsq2j0Gs').then((sentMessage) => sentMessage.delete())
   }).catch(e => console.log(e))
-  }
+  };
   if(message.content.startsWith('s6')) {
     message.member.voice.channel.join().then(VoiceConnection => {
     message.channel.send('splay https://youtu.be/ydA5g9AKXnM').then((sentMessage) => sentMessage.delete())
   }).catch(e => console.log(e))
-  }
+  };
   if(message.content.startsWith('s7')) {
     message.member.voice.channel.join().then(VoiceConnection => {
     message.channel.send('splay https://youtu.be/GHmO5CMR5r8').then((sentMessage) => sentMessage.delete())
   }).catch(e => console.log(e))
-  }
+  };
   if(message.content.startsWith('s8')) {
     message.member.voice.channel.join().then(VoiceConnection => {
     message.channel.send('splay https://youtu.be/tO3e0jIfwls').then((sentMessage) => sentMessage.delete())
   }).catch(e => console.log(e))
-  }
+  };
   if(message.content.startsWith('s9')) {
     message.member.voice.channel.join().then(VoiceConnection => {
     message.channel.send('splay https://youtu.be/iCNPU71fjMQ').then((sentMessage) => sentMessage.delete())
   }).catch(e => console.log(e))
-  }
+  };
   if(message.content.startsWith('s10')) {
     message.member.voice.channel.join().then(VoiceConnection => {
     message.channel.send('splay https://youtu.be/xm8ssMV7V80').then((sentMessage) => sentMessage.delete())
   }).catch(e => console.log(e))
-  }
+  };
   if(message.content.startsWith('s11')) {
     message.member.voice.channel.join().then(VoiceConnection => {
     message.channel.send('splay https://youtu.be/vxemyk0BDxM').then((sentMessage) => sentMessage.delete())
   }).catch(e => console.log(e))
-  }
+  };
   if(message.content.startsWith('s12')) {
     message.member.voice.channel.join().then(VoiceConnection => {
     message.channel.send('splay https://youtu.be/qZS_J6JLQC8').then((sentMessage) => sentMessage.delete())
   }).catch(e => console.log(e))
-  }
+  };
   if(message.content.startsWith('s13')) {
     message.member.voice.channel.join().then(VoiceConnection => {
     message.channel.send('splay https://youtu.be/Tilf7ZuYS5E').then((sentMessage) => sentMessage.delete())
   }).catch(e => console.log(e))
-  }
+  };
   if(message.content.startsWith('s14')) {
     message.member.voice.channel.join().then(VoiceConnection => {
     message.channel.send('splay https://youtu.be/6o2r-6L6pTY').then((sentMessage) => sentMessage.delete())
   }).catch(e => console.log(e))
-  }
+  };
   if(message.content.startsWith('s15')) {
     message.member.voice.channel.join().then(VoiceConnection => {
     message.channel.send('splay https://youtu.be/usTenpr7Vbk').then((sentMessage) => sentMessage.delete())
   }).catch(e => console.log(e))
-  }
+  };
   if(message.content.startsWith('s16')) {
     message.member.voice.channel.join().then(VoiceConnection => {
     message.channel.send('splay https://youtu.be/M6LDok-aN34').then((sentMessage) => sentMessage.delete())
   }).catch(e => console.log(e))
-  }
+  };
   if(message.content.startsWith('s17')) {
     message.member.voice.channel.join().then(VoiceConnection => {
     message.channel.send('splay https://youtu.be/8H3an-qzJfA').then((sentMessage) => sentMessage.delete())
   }).catch(e => console.log(e))
-  }
+  };
   if(message.content.startsWith('s18')) {
     message.member.voice.channel.join().then(VoiceConnection => {
     message.channel.send('splay https://youtu.be/kPUXo2Vuvwk').then((sentMessage) => sentMessage.delete())
   }).catch(e => console.log(e))
-  }
+  };
   if(message.content.startsWith('s19')) {
     message.member.voice.channel.join().then(VoiceConnection => {
     message.channel.send('splay https://youtu.be/B65s1h-Wt8E').then((sentMessage) => sentMessage.delete())
   }).catch(e => console.log(e))
-  }
+  };
   if(message.content.startsWith('s20')) {
     message.member.voice.channel.join().then(VoiceConnection => {
     message.channel.send('splay https://youtu.be/iguiWTPCLAA').then((sentMessage) => sentMessage.delete())
   }).catch(e => console.log(e))
-  }
+  };
   if(message.content.startsWith('s21')) {
     message.member.voice.channel.join().then(VoiceConnection => {
     message.channel.send('splay https://youtu.be/Hfyw3IUbQYE').then((sentMessage) => sentMessage.delete())
   }).catch(e => console.log(e))
-  }
+  };
   if(message.content.startsWith('s22')) {
     message.member.voice.channel.join().then(VoiceConnection => {
     message.channel.send('splay https://youtu.be/jB2gSM_MDt4').then((sentMessage) => sentMessage.delete())
   }).catch(e => console.log(e))
-  }
+  };
   if(message.content.startsWith('s23')) {
     message.member.voice.channel.join().then(VoiceConnection => {
     message.channel.send('splay https://youtu.be/MnVdicNAXHc').then((sentMessage) => sentMessage.delete())
   }).catch(e => console.log(e))
-  }
+  };
   if(message.content.startsWith('s24')) {
     message.member.voice.channel.join().then(VoiceConnection => {
     message.channel.send('splay https://youtu.be/yKUj72e1T6Y').then((sentMessage) => sentMessage.delete())
   }).catch(e => console.log(e))
-  }
+  };
   if(message.content.startsWith('s25')) {
     message.member.voice.channel.join().then(VoiceConnection => {
     message.channel.send('splay https://youtu.be/zb-jTZMwsvA').then((sentMessage) => sentMessage.delete())
   }).catch(e => console.log(e))
-  }
+  };
   if(message.content.startsWith('s26')) {
     message.member.voice.channel.join().then(VoiceConnection => {
     message.channel.send('splay https://youtu.be/UYfIctTUjG0').then((sentMessage) => sentMessage.delete())
   }).catch(e => console.log(e))
-  }
+  };
   if(message.content.startsWith('s27')) {
     message.member.voice.channel.join().then(VoiceConnection => {
     message.channel.send('splay https://youtu.be/N7vJLzCP1AI').then((sentMessage) => sentMessage.delete())
   }).catch(e => console.log(e))
-  }
+  };
   if(message.content.startsWith('s28')) {
     message.member.voice.channel.join().then(VoiceConnection => {
     message.channel.send('splay https://youtu.be/ItdePts9mjg').then((sentMessage) => sentMessage.delete())
   }).catch(e => console.log(e))
-  }
+  };
   if(message.content.startsWith('s29')) {
     message.member.voice.channel.join().then(VoiceConnection => {
     message.channel.send('splay https://youtu.be/zRTIi-YWY9U').then((sentMessage) => sentMessage.delete())
   }).catch(e => console.log(e))
-  }
+  };
   if(message.content.startsWith('s30')) {
     message.member.voice.channel.join().then(VoiceConnection => {
     message.channel.send('splay https://youtu.be/jPg25kpiOH4').then((sentMessage) => sentMessage.delete())
   }).catch(e => console.log(e))
-  }
+  };
   if(message.content.startsWith('s31')) {
     message.member.voice.channel.join().then(VoiceConnection => {
     message.channel.send('splay https://youtu.be/gdsGaNMGXv4').then((sentMessage) => sentMessage.delete())
   }).catch(e => console.log(e))
-  }
+  };
   if(message.content.startsWith('s32')) {
     message.member.voice.channel.join().then(VoiceConnection => {
     message.channel.send('splay https://youtu.be/F4saYZDQszQ').then((sentMessage) => sentMessage.delete())
   }).catch(e => console.log(e))
-  }
+  };
   if(message.content.startsWith('s33')) {
     message.member.voice.channel.join().then(VoiceConnection => {
     message.channel.send('splay https://youtu.be/cJaAF7f1yrA').then((sentMessage) => sentMessage.delete())
   }).catch(e => console.log(e))
-  }
+  };
   if(message.content.startsWith('s34')) {
     message.member.voice.channel.join().then(VoiceConnection => {
     message.channel.send('splay https://youtu.be/zCZ4Pwao5WE').then((sentMessage) => sentMessage.delete())
   }).catch(e => console.log(e))
-  }
+  };
   if(message.content.startsWith('s35')) {
     message.member.voice.channel.join().then(VoiceConnection => {
     message.channel.send('splay https://youtu.be/CFgTwkP_xYo').then((sentMessage) => sentMessage.delete())
   }).catch(e => console.log(e))
-  }
+  };
   if(message.content.startsWith('s36')) {
     message.member.voice.channel.join().then(VoiceConnection => {
     message.channel.send('splay https://youtu.be/7dDavyj4tUI').then((sentMessage) => sentMessage.delete())
   }).catch(e => console.log(e))
-  }
+  };
   if(message.content.startsWith('s37')) {
     message.member.voice.channel.join().then(VoiceConnection => {
     message.channel.send('splay https://youtu.be/KVGFfd65TKQ').then((sentMessage) => sentMessage.delete())
   }).catch(e => console.log(e))
-  }
+  };
 
   if(message.content.startsWith('a1')) {
     message.member.voice.channel.join().then(VoiceConnection => {
     message.channel.send('splay https://youtu.be/axS66pSVyas').then((sentMessage) => sentMessage.delete())
   }).catch(e => console.log(e))
-  }
+  };
   if(message.content.startsWith('a2')) {
     message.member.voice.channel.join().then(VoiceConnection => {
     message.channel.send('splay https://youtu.be/Nq9ZH2KtugA').then((sentMessage) => sentMessage.delete())
   }).catch(e => console.log(e))
-  }
+  };
   if(message.content.startsWith('a3')) {
     message.member.voice.channel.join().then(VoiceConnection => {
     message.channel.send('splay https://youtu.be/FHtvNU_X2Xk').then((sentMessage) => sentMessage.delete())
   }).catch(e => console.log(e))
-  }
+  };
   if(message.content.startsWith('a4')) {
     message.member.voice.channel.join().then(VoiceConnection => {
     message.channel.send('splay https://youtu.be/CsPC9pUOXKo').then((sentMessage) => sentMessage.delete())
   }).catch(e => console.log(e))
-  }
+  };
   if(message.content.startsWith('a5')) {
     message.member.voice.channel.join().then(VoiceConnection => {
     message.channel.send('splay https://youtu.be/F0uQiVwwaBo').then((sentMessage) => sentMessage.delete())
   }).catch(e => console.log(e))
-  }
+  };
   if(message.content.startsWith('a6')) {
     message.member.voice.channel.join().then(VoiceConnection => {
     message.channel.send('splay https://youtu.be/cv0XDa4mC9U').then((sentMessage) => sentMessage.delete())
   }).catch(e => console.log(e))
-  }
+  };
   if(message.content.startsWith('a7')) {
     message.member.voice.channel.join().then(VoiceConnection => {
     message.channel.send('splay https://youtu.be/OWpnybV2-JE').then((sentMessage) => sentMessage.delete())
   }).catch(e => console.log(e))
-  }
+  };
 
 if(message.content.startsWith('k1')) {
   message.member.voice.channel.join().then(VoiceConnection => {
     message.channel.send('splay https://youtu.be/FHkPM_oeETg').then((sentMessage) => sentMessage.delete())
   }).catch(e => console.log(e))
-}
+};
 if(message.content.startsWith('k2')) {
   message.member.voice.channel.join().then(VoiceConnection => {
     message.channel.send('splay https://youtu.be/C1wrjE4FS2Q').then((sentMessage) => sentMessage.delete())
   }).catch(e => console.log(e))
-}
+};
 if(message.content.startsWith('k3')) {
   message.member.voice.channel.join().then(VoiceConnection => {
     message.channel.send('splay https://youtu.be/Z7b37zgCQow').then((sentMessage) => sentMessage.delete())
   }).catch(e => console.log(e))
-}
+};
 if(message.content.startsWith('k4')) {
   message.member.voice.channel.join().then(VoiceConnection => {
     message.channel.send('splay https://youtu.be/l_iU1Jlnajg').then((sentMessage) => sentMessage.delete())
   }).catch(e => console.log(e))
-}
+};
 if(message.content.startsWith('k5')) {
   message.member.voice.channel.join().then(VoiceConnection => {
     message.channel.send('splay https://youtu.be/Tr3A9vUDYg4').then((sentMessage) => sentMessage.delete())
   }).catch(e => console.log(e))
-}
+};
 if(message.content.startsWith('k6')) {
   message.member.voice.channel.join().then(VoiceConnection => {
     message.channel.send('splay https://youtu.be/zUt-qN7nPN4').then((sentMessage) => sentMessage.delete())
   }).catch(e => console.log(e))
-}
+};
 if(message.content.startsWith('k7')) {
   message.member.voice.channel.join().then(VoiceConnection => {
     message.channel.send('splay https://youtu.be/RH6Ov-cqofY').then((sentMessage) => sentMessage.delete())
   }).catch(e => console.log(e))
-}
+};
 if(message.content.startsWith('k8')) {
   message.member.voice.channel.join().then(VoiceConnection => {
     message.channel.send('splay https://youtu.be/MqE_IBIz0O8').then((sentMessage) => sentMessage.delete())
   }).catch(e => console.log(e))
-}
+};
 
 if(message.content.startsWith('x1')) {
   message.member.voice.channel.join().then(VoiceConnection => {
     message.channel.send('splay https://youtu.be/6mnq6pG8fHA').then((sentMessage) => sentMessage.delete())
   }).catch(e => console.log(e))
-}
+};
 if(message.content.startsWith('x2')) {
   message.member.voice.channel.join().then(VoiceConnection => {
     message.channel.send('splay https://youtu.be/wOjmayCQTC8').then((sentMessage) => sentMessage.delete())
   }).catch(e => console.log(e))
-}
+};
 if(message.content.startsWith('x3')) {
   message.member.voice.channel.join().then(VoiceConnection => {
     message.channel.send('splay https://youtu.be/f3WtJXnZ5q4').then((sentMessage) => sentMessage.delete())
   }).catch(e => console.log(e))
-}
+};
 
 if (message.content == "sdis") {
 
