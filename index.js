@@ -103,7 +103,7 @@ client.on('message', message => {
         { name: '\u200B   اغنم زمانك    \u200B', value: '12', inline: true },
         { name: '\u200B   احبك لو تكون حاضر    \u200B', value: '13', inline: true },
         { name: '\u200B   مقادير    \u200B', value: '14', inline: true },
-        { name: '\u200B   خليني فعيونك هوا    \u200B', value: '15', inline: true },
+        { name: '\u200B   العطر    \u200B', value: '15', inline: true },
         { name: '\u200B   وردك يا زارع الورد    \u200B', value: '16', inline: true },
         { name: '\u200B   زمان الصمت    \u200B', value: '17', inline: true },
         { name: '\u200B   اعترف لك    \u200B', value: '18', inline: true },
