@@ -490,19 +490,6 @@ if (message.content == "sdis") {
       message.reply("تم");
   }).catch(e => console.log(e))
 };
-
-if(message.content.startsWith('xtest')) {
-  message.channel.send('s1');
-}
-});
-
-
-client.on('message', message => {
-  if(message.content.startsWith('v1')) {
-    message.member.voice.channel.join().then(VoiceConnection => {
-    message.channel.send('splay https://youtu.be/LJkLqG5Huls').then((sentMessage) => sentMessage.edit("شغال"))
-  }).catch(e => console.log(e))
-  }
 });
 
 
