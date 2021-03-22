@@ -136,6 +136,7 @@ client.on('message', message => {
         { name: '\u200B   سويعات الاصيل    \u200B', value: '35', inline: true },
         { name: '\u200B   مر بي    \u200B', value: '36', inline: true },
         { name: '\u200B   أجاذبك الهوى    \u200B', value: '37', inline: true },
+        { name: '\u200B   مسرحية    \u200B', value: '38', inline: true },
       )
     message.channel.send(embed);
   }
@@ -387,6 +388,11 @@ client.on('message', message => {
   if(message.content === "s37") {
     message.member.voice.channel.join().then(VoiceConnection => {
     message.channel.send('splay https://youtu.be/KVGFfd65TKQ').then((sentMessage) => sentMessage.delete())
+  }).catch(e => console.log(e))
+  }
+  if(message.content === "s38") {
+    message.member.voice.channel.join().then(VoiceConnection => {
+    message.channel.send('splay https://youtu.be/2HPAC0nvvjc').then((sentMessage) => sentMessage.delete())
   }).catch(e => console.log(e))
   }
 
