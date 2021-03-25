@@ -589,7 +589,7 @@ function stop(message, serverQueue) {
     );
     
   if (!serverQueue)
-    return message.channel.send("ما فيه اغنية شغالة حالياّ عشان اوقفها");
+    return message.channel.send("");
     
   serverQueue.songs = [];
   serverQueue.connection.dispatcher.end();
