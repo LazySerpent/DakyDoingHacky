@@ -589,7 +589,6 @@ function stop(message, serverQueue) {
     );
     
   if (!serverQueue)
-    return message.channel.send("");
     
   serverQueue.songs = [];
   serverQueue.connection.dispatcher.end();
