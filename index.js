@@ -584,6 +584,7 @@ function stop(message, serverQueue) {
     
   serverQueue.songs = [];
   serverQueue.connection.dispatcher.end();
+  return message.channel.send("تم");
 }
 
 function play(guild, song) {
