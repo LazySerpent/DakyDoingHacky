@@ -488,14 +488,6 @@ if(message.content === "x3") {
     message.channel.send('splay https://youtu.be/f3WtJXnZ5q4').then((sentMessage) => sentMessage.delete())
   }).catch(e => console.log(e))
 }
-
-if (message.content == "sdis") {
-
-  message.member.voice.channel.join().then(VoiceConnection => {
-      VoiceConnection.disconnect();
-      message.reply("تم");
-  }).catch(e => console.log(e))
-};
 });
 
 
