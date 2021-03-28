@@ -296,7 +296,7 @@ client.on('message', message => {
   }
   if (message.content === 'zlist') {
     const embed = new MessageEmbed()
-      .setTitle('قائمة  أغاني عبد الحليم حافظ')
+      .setTitle('قائمة  أغاني عبدالحليم حافظ')
       .setColor(0x11AABB)
       .addFields(
         { name: '\u200B', value: '\u200B' },
@@ -311,7 +311,7 @@ client.on('message', message => {
   }
   if (message.content === 'zl') {
     const embed = new MessageEmbed()
-      .setTitle('قائمة  أغاني عبد الحليم حافظ')
+      .setTitle('قائمة  أغاني عبدالحليم حافظ')
       .setColor(0x11AABB)
       .addFields(
         { name: '\u200B', value: '\u200B' },
@@ -336,6 +336,7 @@ client.on('message', message => {
         { name: '\u200B   alist(al)   \u200B', value: 'لستت أغاني عبادي الجوهر (يكتب بعدها:1 أو 2إلخ...)', inline: true },
         { name: '\u200B   klist(kl)   \u200B', value: 'لستت أغاني خالد عبدالرحمن (يكتب بعدها:1 أو 2إلخ...)', inline: true },
         { name: '\u200B   xlist(xl)   \u200B', value: 'لستت أغاني مختارة (يكتب بعدها:1 أو 2إلخ...)', inline: true },
+        { name: '\u200B   zlist(zl)   \u200B', value: 'لستت أغاني عبدالحليم حافظ (يكتب بعدها:1 أو 2إلخ...)', inline: true },
         { name: '\u200B   s او k او a (يتبعها رقم الأغنية)   \u200B', value: 'لتشغيل الأغنية المختارة من اللسته', inline: true },
         { name: '\u200B   splay   \u200B', value: 'تشغيل اغنية من اليوتيوب عن طريق رابط', inline: true },
         { name: '\u200B   sskip   \u200B', value: 'تسكيب اغنية ', inline: true },
@@ -355,6 +356,7 @@ client.on('message', message => {
         { name: '\u200B   alist(al)   \u200B', value: 'لستت أغاني عبادي الجوهر (يكتب بعدها:1 أو 2إلخ...)', inline: true },
         { name: '\u200B   klist(kl)   \u200B', value: 'لستت أغاني خالد عبدالرحمن (يكتب بعدها:1 أو 2إلخ...)', inline: true },
         { name: '\u200B   xlist(xl)   \u200B', value: 'لستت أغاني مختارة (يكتب بعدها:1 أو 2إلخ...)', inline: true },
+        { name: '\u200B   zlist(zl)   \u200B', value: 'لستت أغاني عبدالحليم حافظ (يكتب بعدها:1 أو 2إلخ...)', inline: true },
         { name: '\u200B   s او k او a (يتبعها رقم الأغنية)   \u200B', value: 'لتشغيل الأغنية المختارة من اللسته', inline: true },
         { name: '\u200B   splay   \u200B', value: 'تشغيل اغنية من اليوتيوب عن طريق رابط', inline: true },
         { name: '\u200B   sskip   \u200B', value: 'تسكيب اغنية ', inline: true },
