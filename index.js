@@ -247,6 +247,7 @@ client.on('message', message => {
         { name: '\u200B   انتي اجمل   \u200B', value: '6', inline: true },
         { name: '\u200B   العطا   \u200B', value: '7', inline: true },
         { name: '\u200B   يا ظالمة   \u200B', value: '8', inline: true },
+        { name: '\u200B   يا عذابي   \u200B', value: '9', inline: true },
       )
     message.channel.send(embed);
   }
@@ -265,7 +266,8 @@ client.on('message', message => {
         { name: '\u200B   انتي اجمل   \u200B', value: '6', inline: true },
         { name: '\u200B   العطا   \u200B', value: '7', inline: true },
         { name: '\u200B   يا ظالمة   \u200B', value: '8', inline: true },
-      )
+        { name: '\u200B   يا عذابي   \u200B', value: '9', inline: true },
+        )
     message.channel.send(embed);
   }
   if (message.content === 'xlist') {
@@ -289,6 +291,36 @@ client.on('message', message => {
         { name: '\u200B    من حب من قلب ماهون    \u200b', value: '1', inline: true },
         { name: '\u200B   خلصت من جملة الخلان   \u200B', value: '2', inline: true },
         { name: '\u200B   حد مثلي   \u200B', value: '3', inline: true },
+      )
+    message.channel.send(embed);
+  }
+  if (message.content === 'zlist') {
+    const embed = new MessageEmbed()
+      .setTitle('قائمة  أغاني عبد الحليم حافظ')
+      .setColor(0x11AABB)
+      .addFields(
+        { name: '\u200B', value: '\u200B' },
+        { name: '\u200B    على حسب وداد قلبى    \u200b', value: '1', inline: true },
+        { name: '\u200B   زي الهوا   \u200B', value: '2', inline: true },
+        { name: '\u200B   جانا الهوا   \u200B', value: '3', inline: true },
+        { name: '\u200B    حاول تفتكرنى    \u200b', value: '4', inline: true },
+        { name: '\u200B   سواح   \u200B', value: '5', inline: true },
+        { name: '\u200B   اهواك   \u200B', value: '6', inline: true },
+      )
+    message.channel.send(embed);
+  }
+  if (message.content === 'zl') {
+    const embed = new MessageEmbed()
+      .setTitle('قائمة  أغاني عبد الحليم حافظ')
+      .setColor(0x11AABB)
+      .addFields(
+        { name: '\u200B', value: '\u200B' },
+        { name: '\u200B    على حسب وداد قلبى    \u200b', value: '1', inline: true },
+        { name: '\u200B   زي الهوا   \u200B', value: '2', inline: true },
+        { name: '\u200B   جانا الهوا   \u200B', value: '3', inline: true },
+        { name: '\u200B    حاول تفتكرنى    \u200b', value: '4', inline: true },
+        { name: '\u200B   سواح   \u200B', value: '5', inline: true },
+        { name: '\u200B   اهواك   \u200B', value: '6', inline: true },
       )
     message.channel.send(embed);
   }
@@ -597,6 +629,11 @@ if(message.content === "k8") {
     message.channel.send('splay https://youtu.be/MqE_IBIz0O8').then((sentMessage) => sentMessage.delete())
   }).catch(e => console.log(e))
 }
+if(message.content === "k9") {
+  message.member.voice.channel.join().then(VoiceConnection => {
+    message.channel.send('splay https://youtu.be/MtMUdKi7ymk').then((sentMessage) => sentMessage.delete())
+  }).catch(e => console.log(e))
+}
 
 if(message.content === "x1") {
   message.member.voice.channel.join().then(VoiceConnection => {
@@ -611,6 +648,37 @@ if(message.content === "x2") {
 if(message.content === "x3") {
   message.member.voice.channel.join().then(VoiceConnection => {
     message.channel.send('splay https://youtu.be/f3WtJXnZ5q4').then((sentMessage) => sentMessage.delete())
+  }).catch(e => console.log(e))
+}
+
+if(message.content === "z1") {
+  message.member.voice.channel.join().then(VoiceConnection => {
+    message.channel.send('splay https://youtu.be/p8geoEgdrr0').then((sentMessage) => sentMessage.delete())
+  }).catch(e => console.log(e))
+}
+if(message.content === "z2") {
+  message.member.voice.channel.join().then(VoiceConnection => {
+    message.channel.send('splay https://youtu.be/ARaIrRuxXdA').then((sentMessage) => sentMessage.delete())
+  }).catch(e => console.log(e))
+}
+if(message.content === "z3") {
+  message.member.voice.channel.join().then(VoiceConnection => {
+    message.channel.send('splay https://youtu.be/-RHgvrG69iU').then((sentMessage) => sentMessage.delete())
+  }).catch(e => console.log(e))
+}
+if(message.content === "z4") {
+  message.member.voice.channel.join().then(VoiceConnection => {
+    message.channel.send('splay https://youtu.be/tdDcpURozj4').then((sentMessage) => sentMessage.delete())
+  }).catch(e => console.log(e))
+}
+if(message.content === "z5") {
+  message.member.voice.channel.join().then(VoiceConnection => {
+    message.channel.send('splay https://youtu.be/LFO2doiRHMI').then((sentMessage) => sentMessage.delete())
+  }).catch(e => console.log(e))
+}
+if(message.content === "z6") {
+  message.member.voice.channel.join().then(VoiceConnection => {
+    message.channel.send('splay https://youtu.be/Od6LJhVvNOI').then((sentMessage) => sentMessage.delete())
   }).catch(e => console.log(e))
 }
 });
