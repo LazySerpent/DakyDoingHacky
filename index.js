@@ -706,6 +706,12 @@ client.on("message", async message => {
   } else if (message.content.startsWith(`${prefix}dis`)) {
     stop(message, serverQueue);
     return;
+  } else if (message.content.startsWith(`${prefix}pause`)) {
+    pause(serverQueue);
+    break;
+  } else if (message.content.startsWith(`${prefix}resume`)) {
+    resume(serverQueue);
+    break;
   }
 });
 
@@ -801,24 +807,28 @@ function play(guild, song) {
   dispatcher.setVolumeLogarithmic(serverQueue.volume / 5);
   serverQueue.textChannel.send(`شغال`);
 }
-client.on('message', message => {
-if(message.content === "spause") {
-  let dispatcher = connection.play(song)
-  dispatcher.pause()
+
+function pause(serverQueue){
+    if(!serverQueue.connection)
+        return message.channel.send("مافيه شيء شغال");
+    if(!message.member.voice.channel)
+        return message.channel.send("لازم تكون داخل روم")
+    if(serverQueue.connection.dispatcher.paused)
+        return message.channel.send("الأغنية موقفة");
+    serverQueue.connection.dispatcher.pause();
+    message.channel.send("تم");
 }
-if(message.content === "sp") {
-  let dispatcher = connection.play(song)
-  dispatcher.pause()
+function resume(serverQueue){
+    if(!serverQueue.connection)
+        return message.channel.send("مافيه شيء شغال");
+    if(!message.member.voice.channel)
+        return message.channel.send("لازم تكون داخل روم")
+    if(serverQueue.connection.dispatcher.resumed)
+        return message.channel.send("الأغنية شغالة");
+    serverQueue.connection.dispatcher.resume();
+    message.channel.send("تم");
 }
-if(message.content === "sresume") {
-  let dispatcher = connection.play(song)
-  dispatcher.resume()
-}
-if(message.content === "sr") {
-  let dispatcher = connection.play(song)
-  dispatcher.resume()
-}
-});
+
 client.on('voiceStateUpdate', (oldState, newState) => {
   if (oldState.channelID === null || typeof oldState.channelID == 'undefined') return;
   if (newState.id !== client.user.id) return;
