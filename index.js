@@ -708,10 +708,10 @@ client.on("message", async message => {
     return;
   } else if (message.content.startsWith(`${prefix}pause`)) {
     pause(serverQueue);
-    break;
+    return;
   } else if (message.content.startsWith(`${prefix}resume`)) {
     resume(serverQueue);
-    break;
+    return;
   }
 });
 
