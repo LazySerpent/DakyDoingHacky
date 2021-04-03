@@ -683,6 +683,23 @@ if(message.content === "z6") {
     message.channel.send('splay https://youtu.be/Od6LJhVvNOI').then((sentMessage) => sentMessage.delete())
   }).catch(e => console.log(e))
 }
+
+if(message.content === "spause") {
+  let dispatcher = connection.play(song)
+  dispatcher.pause()
+}
+if(message.content === "sp") {
+  let dispatcher = connection.play(song)
+  dispatcher.pause()
+}
+if(message.content === "sresume") {
+  let dispatcher = connection.play(song)
+  dispatcher.resume()
+}
+if(message.content === "sr") {
+  let dispatcher = connection.play(song)
+  dispatcher.resume()
+}
 });
 
 
@@ -801,6 +818,7 @@ function play(guild, song) {
   dispatcher.setVolumeLogarithmic(serverQueue.volume / 5);
   serverQueue.textChannel.send(`شغال`);
 }
+
 client.on('voiceStateUpdate', (oldState, newState) => {
   if (oldState.channelID === null || typeof oldState.channelID == 'undefined') return;
   if (newState.id !== client.user.id) return;
