@@ -727,7 +727,7 @@ client.on("message", async message => {
   } else if (message.content.startsWith(`${prefix}volume`)) {
     setVolume(message, serverQueue);
     return;
-  } else if (message.content.startsWith(`${prefix}v`)) {
+  } else if (message.content.startsWith(`${prefix}v 25`)) {
     setVolume(message, serverQueue);
     return;
   }
@@ -847,13 +847,12 @@ function resume(message, serverQueue){
   message.react('👍');
 }
 function setVolume(message, serverQueue){
-  if (!message.member.voice.channel) return message.channel.send("I'm sorry, but you need to be in a voice channel to set a volume!");
-  if (!serverQueue) return message.channel.send("There is nothing playing");
-  if (!args[1]) return message.channel.send(`The current volume is: **\`${serverQueue.volume}%\`**`);
-  if (isNaN(args[1]) || args[1] > 100) return message.channel.send("Volume only can be set in a range of **\`1\`** - **\`100\`**");
-  serverQueue.volume = args[1];
-  serverQueue.connection.dispatcher.setVolume(args[1] / 100);
-  return message.channel.send(`I set the volume to: **\`${args[1]}%\`**`);
+  if(!serverQueue.connection)
+      return message.channel.send("مافيه شيء شغال");
+  if(!message.member.voice.channel)
+      return message.channel.send("لازم تكون داخل روم")
+  serverQueue.connection.dispatcher.setVolume(0.25);
+  message.react('👍');
 }
 
 client.on('voiceStateUpdate', (oldState, newState) => {
