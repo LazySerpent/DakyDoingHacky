@@ -703,14 +703,32 @@ client.on("message", async message => {
   } else if (message.content.startsWith(`${prefix}skip`)) {
     skip(message, serverQueue);
     return;
+  } else if (message.content.startsWith(`${prefix}s`)) {
+    skip(message, serverQueue);
+    return;
   } else if (message.content.startsWith(`${prefix}dis`)) {
+    stop(message, serverQueue);
+    return;
+  } else if (message.content.startsWith(`${prefix}d`)) {
     stop(message, serverQueue);
     return;
   } else if (message.content.startsWith(`${prefix}pause`)) {
     pause(message, serverQueue);
     return;
+  } else if (message.content.startsWith(`${prefix}p`)) {
+    pause(message, serverQueue);
+    return;
   } else if (message.content.startsWith(`${prefix}resume`)) {
     resume(message, serverQueue);
+    return;
+  } else if (message.content.startsWith(`${prefix}r`)) {
+    resume(message, serverQueue);
+    return;
+  } else if (message.content.startsWith(`${prefix}volume`)) {
+    setVolume(message, serverQueue);
+    return;
+  } else if (message.content.startsWith(`${prefix}v`)) {
+    setVolume(message, serverQueue);
     return;
   }
 });
@@ -809,24 +827,33 @@ function play(guild, song) {
 }
 
 function pause(message, serverQueue){
-    if(!serverQueue.connection)
-        return message.channel.send("مافيه شيء شغال");
-    if(!message.member.voice.channel)
-        return message.channel.send("لازم تكون داخل روم")
-    if(serverQueue.connection.dispatcher.paused)
-        return message.channel.send("الأغنية موقفة");
-    serverQueue.connection.dispatcher.pause();
-    message.channel.send("تم");
+  if(!serverQueue.connection)
+      return message.channel.send("مافيه شيء شغال");
+  if(!message.member.voice.channel)
+      return message.channel.send("لازم تكون داخل روم")
+  if(serverQueue.connection.dispatcher.paused)
+      return message.channel.send("الأغنية موقفة");
+  serverQueue.connection.dispatcher.pause();
+  message.react('👍');
 }
 function resume(message, serverQueue){
-    if(!serverQueue.connection)
-        return message.channel.send("مافيه شيء شغال");
-    if(!message.member.voice.channel)
-        return message.channel.send("لازم تكون داخل روم")
-    if(serverQueue.connection.dispatcher.resumed)
-        return message.channel.send("الأغنية شغالة");
-    serverQueue.connection.dispatcher.resume();
-    message.channel.send("تم");
+  if(!serverQueue.connection)
+      return message.channel.send("مافيه شيء شغال");
+  if(!message.member.voice.channel)
+      return message.channel.send("لازم تكون داخل روم")
+  if(serverQueue.connection.dispatcher.resumed)
+      return message.channel.send("الأغنية شغالة");
+  serverQueue.connection.dispatcher.resume();
+  message.react('👍');
+}
+function setVolume(message, serverQueue){
+  if (!message.member.voice.channel) return message.channel.send("I'm sorry, but you need to be in a voice channel to set a volume!");
+  if (!serverQueue) return message.channel.send("There is nothing playing");
+  if (!args[1]) return message.channel.send(`The current volume is: **\`${serverQueue.volume}%\`**`);
+  if (isNaN(args[1]) || args[1] > 100) return message.channel.send("Volume only can be set in a range of **\`1\`** - **\`100\`**");
+  serverQueue.volume = args[1];
+  serverQueue.connection.dispatcher.setVolume(args[1] / 100);
+  return message.channel.send(`I set the volume to: **\`${args[1]}%\`**`);
 }
 
 client.on('voiceStateUpdate', (oldState, newState) => {
@@ -836,4 +863,4 @@ client.on('voiceStateUpdate', (oldState, newState) => {
   
 });
 
-client.login(process.env.token);
+client.login(process.env.token);dispatcher.setVolume(0.25);
