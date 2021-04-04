@@ -863,4 +863,4 @@ client.on('voiceStateUpdate', (oldState, newState) => {
   
 });
 
-client.login(process.env.token);dispatcher.setVolume(0.25);
+client.login(process.env.token);
