@@ -707,10 +707,10 @@ client.on("message", async message => {
     stop(message, serverQueue);
     return;
   } else if (message.content.startsWith(`${prefix}pause`)) {
-    pause(serverQueue);
+    pause(message, serverQueue);
     return;
   } else if (message.content.startsWith(`${prefix}resume`)) {
-    resume(serverQueue);
+    resume(message, serverQueue);
     return;
   }
 });
@@ -808,7 +808,7 @@ function play(guild, song) {
   serverQueue.textChannel.send(`شغال`);
 }
 
-function pause(serverQueue){
+function pause(message, serverQueue){
     if(!serverQueue.connection)
         return message.channel.send("مافيه شيء شغال");
     if(!message.member.voice.channel)
@@ -818,7 +818,7 @@ function pause(serverQueue){
     serverQueue.connection.dispatcher.pause();
     message.channel.send("تم");
 }
-function resume(serverQueue){
+function resume(message, serverQueue){
     if(!serverQueue.connection)
         return message.channel.send("مافيه شيء شغال");
     if(!message.member.voice.channel)
