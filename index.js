@@ -779,7 +779,7 @@ async function execute(message, serverQueue) {
     }
   } else {
     serverQueue.songs.push(song);
-    return message.channel.send(`say ${song.title} أضيف لقائمة الإنتظار`);
+    return message.channel.send(`ssay ${song.title} أضيف لقائمة الإنتظار`);
   }
 }
 
@@ -823,7 +823,7 @@ function play(guild, song) {
     })
     .on("error", error => console.error(error));
   dispatcher.setVolumeLogarithmic(serverQueue.volume / 5);
-  serverQueue.textChannel.send(`say شغال`);
+  serverQueue.textChannel.send(`ssay شغال`);
 }
 
 function pause(message, serverQueue){
@@ -864,7 +864,6 @@ client.on('voiceStateUpdate', (oldState, newState) => {
 
 client.on('message', message => {
 
-
   let msg = message.content.toLowerCase()
   let args = message.content
     .slice(prefix.length)
@@ -875,8 +874,7 @@ client.on('message', message => {
   if (command === 'say') {
     let say = args.join(' ') //space
     message.delete() //deletes the message you sent
-    const generalChannel = message.guild.channels.get('730869961475489903')
-    generalChannel.send(say)
+    client.channels.cache.get("730869961475489903").send(say)
   }
 })
 
