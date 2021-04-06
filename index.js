@@ -824,7 +824,7 @@ function play(guild, song) {
     })
     .on("error", error => console.error(error));
   dispatcher.setVolumeLogarithmic(serverQueue.volume / 5);
-  serverQueue.textChannel.send(`شغال`);
+  serverQueue.textChannel.send(`!say شغال`);
 }
 
 function pause(message, serverQueue){
