@@ -875,7 +875,7 @@ client.on('message', message => {
   if (command === 'say') {
     let say = args.join(' ') //space
     message.delete() //deletes the message you sent
-    const generalChannel = message.guild.channels.find(channel => channel.name === "bot-commands")
+    const generalChannel = message.guild.channels.get('730869961475489903')
     generalChannel.send(say)
   }
 })
