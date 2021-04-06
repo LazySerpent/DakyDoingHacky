@@ -873,7 +873,7 @@ client.on('message', message => {
 
   if (command === 'say') {
     let say = args.join(' ') //space
-    message.delete() //deletes the message you sent
+//    message.delete() //deletes the message you sent
     client.channels.cache.get("730869961475489903").send(say)
   }
 })
