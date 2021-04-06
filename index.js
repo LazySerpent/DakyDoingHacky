@@ -780,7 +780,7 @@ async function execute(message, serverQueue) {
     }
   } else {
     serverQueue.songs.push(song);
-    return message.channel.send(`${song.title} أضيف لقائمة الإنتظار`);
+    return message.channel.send(`!say ${song.title} أضيف لقائمة الإنتظار`);
   }
 }
 
@@ -862,5 +862,22 @@ client.on('voiceStateUpdate', (oldState, newState) => {
   return queue.delete(oldState.guild.id);
   
 });
+
+client.on('message', message => {
+
+  let xprefix = '!'
+  let msg = message.content.toLowerCase()
+  let xargs = message.content
+    .slice(xprefix.length)
+    .trim()
+    .split(' ') //arguments
+  let command = xargs.shift().toLowerCase() //shifts args to lower case letters
+
+  if (command === 'say') {
+    let say = xargs.join(' ') //space
+    message.delete() //deletes the message you sent
+    client.channels.cache.get("730869961475489903").send(say)
+  }
+})
 
 client.login(process.env.token);
