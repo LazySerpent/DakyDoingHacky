@@ -863,17 +863,16 @@ client.on('voiceStateUpdate', (oldState, newState) => {
 });
 
 client.on('message', message => {
-
-  let msg = message.content.toLowerCase()
+  let xprefix = '!'
   let args = message.content
-    .slice(prefix.length)
+    .slice(xprefix.length)
     .trim()
     .split(' ') //arguments
   let command = args.shift().toLowerCase() //shifts args to lower case letters
 
   if (command === 'say') {
     let say = args.join(' ') //space
-//    message.delete() //deletes the message you sent
+    message.delete() //deletes the message you sent
     client.channels.cache.get("730869961475489903").send(say)
   }
 })
