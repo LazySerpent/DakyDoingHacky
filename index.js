@@ -367,384 +367,320 @@ client.on('message', message => {
   if(message.content === "s1") {
     message.member.voice.channel.join().then(VoiceConnection => {
       client.channels.cache.get('829067335402520677').send('splay https://youtu.be/LJkLqG5Huls').then((sentMessage) => sentMessage.delete())
-      message.channel.send("شغال")
   }).catch(e => console.log(e))
   }
   if(message.content === "s2") {
     message.member.voice.channel.join().then(VoiceConnection => {
       client.channels.cache.get('829067335402520677').send('splay https://youtu.be/Q-uoqfEPjGw').then((sentMessage) => sentMessage.delete())
-      message.channel.send("شغال")
   }).catch(e => console.log(e))
   }
   if(message.content === "s3") {
     message.member.voice.channel.join().then(VoiceConnection => {
       client.channels.cache.get('829067335402520677').send('splay https://youtu.be/xPujFVqw43c').then((sentMessage) => sentMessage.delete())
-      message.channel.send("شغال")
   }).catch(e => console.log(e))
   }
   if(message.content === "s4") {
     message.member.voice.channel.join().then(VoiceConnection => {
       client.channels.cache.get('829067335402520677').send('splay https://youtu.be/ido9UlVCsVQ').then((sentMessage) => sentMessage.delete())
-      message.channel.send("شغال")
   }).catch(e => console.log(e))
   }
   if(message.content === "s5") {
     message.member.voice.channel.join().then(VoiceConnection => {
       client.channels.cache.get('829067335402520677').send('splay https://youtu.be/xXPzsq2j0Gs').then((sentMessage) => sentMessage.delete())
-      message.channel.send("شغال")
   }).catch(e => console.log(e))
   }
   if(message.content === "s6") {
     message.member.voice.channel.join().then(VoiceConnection => {
       client.channels.cache.get('829067335402520677').send('splay https://youtu.be/ydA5g9AKXnM').then((sentMessage) => sentMessage.delete())
-      message.channel.send("شغال")
   }).catch(e => console.log(e))
   }
   if(message.content === "s7") {
     message.member.voice.channel.join().then(VoiceConnection => {
       client.channels.cache.get('829067335402520677').send('splay https://youtu.be/GHmO5CMR5r8').then((sentMessage) => sentMessage.delete())
-      message.channel.send("شغال")
   }).catch(e => console.log(e))
   }
   if(message.content === "s8") {
     message.member.voice.channel.join().then(VoiceConnection => {
       client.channels.cache.get('829067335402520677').send('splay https://youtu.be/tO3e0jIfwls').then((sentMessage) => sentMessage.delete())
-      message.channel.send("شغال")
   }).catch(e => console.log(e))
   }
   if(message.content === "s9") {
     message.member.voice.channel.join().then(VoiceConnection => {
       client.channels.cache.get('829067335402520677').send('splay https://youtu.be/iCNPU71fjMQ').then((sentMessage) => sentMessage.delete())
-      message.channel.send("شغال")
   }).catch(e => console.log(e))
   }
   if(message.content === "s10") {
     message.member.voice.channel.join().then(VoiceConnection => {
       client.channels.cache.get('829067335402520677').send('splay https://youtu.be/xm8ssMV7V80').then((sentMessage) => sentMessage.delete())
-      message.channel.send("شغال")
   }).catch(e => console.log(e))
   }
   if(message.content === "s11") {
     message.member.voice.channel.join().then(VoiceConnection => {
       client.channels.cache.get('829067335402520677').send('splay https://youtu.be/vxemyk0BDxM').then((sentMessage) => sentMessage.delete())
-      message.channel.send("شغال")
   }).catch(e => console.log(e))
   }
   if(message.content === "s12") {
     message.member.voice.channel.join().then(VoiceConnection => {
       client.channels.cache.get('829067335402520677').send('splay https://youtu.be/qZS_J6JLQC8').then((sentMessage) => sentMessage.delete())
-      message.channel.send("شغال")
   }).catch(e => console.log(e))
   }
   if(message.content === "s13") {
     message.member.voice.channel.join().then(VoiceConnection => {
       client.channels.cache.get('829067335402520677').send('splay https://youtu.be/Tilf7ZuYS5E').then((sentMessage) => sentMessage.delete())
-      message.channel.send("شغال")
   }).catch(e => console.log(e))
   }
   if(message.content === "s14") {
     message.member.voice.channel.join().then(VoiceConnection => {
       client.channels.cache.get('829067335402520677').send('splay https://youtu.be/6o2r-6L6pTY').then((sentMessage) => sentMessage.delete())
-      message.channel.send("شغال")
   }).catch(e => console.log(e))
   }
   if(message.content === "s15") {
     message.member.voice.channel.join().then(VoiceConnection => {
       client.channels.cache.get('829067335402520677').send('splay https://youtu.be/usTenpr7Vbk').then((sentMessage) => sentMessage.delete())
-      message.channel.send("شغال")
   }).catch(e => console.log(e))
   }
   if(message.content === "s16") {
     message.member.voice.channel.join().then(VoiceConnection => {
       client.channels.cache.get('829067335402520677').send('splay https://youtu.be/M6LDok-aN34').then((sentMessage) => sentMessage.delete())
-      message.channel.send("شغال")
   }).catch(e => console.log(e))
   }
   if(message.content === "s17") {
     message.member.voice.channel.join().then(VoiceConnection => {
       client.channels.cache.get('829067335402520677').send('splay https://youtu.be/8H3an-qzJfA').then((sentMessage) => sentMessage.delete())
-      message.channel.send("شغال")
   }).catch(e => console.log(e))
   }
   if(message.content === "s18") {
     message.member.voice.channel.join().then(VoiceConnection => {
       client.channels.cache.get('829067335402520677').send('splay https://youtu.be/kPUXo2Vuvwk').then((sentMessage) => sentMessage.delete())
-      message.channel.send("شغال")
   }).catch(e => console.log(e))
   }
   if(message.content === "s19") {
     message.member.voice.channel.join().then(VoiceConnection => {
       client.channels.cache.get('829067335402520677').send('splay https://youtu.be/B65s1h-Wt8E').then((sentMessage) => sentMessage.delete())
-      message.channel.send("شغال")
   }).catch(e => console.log(e))
   }
   if(message.content === "s20") {
     message.member.voice.channel.join().then(VoiceConnection => {
       client.channels.cache.get('829067335402520677').send('splay https://youtu.be/iguiWTPCLAA').then((sentMessage) => sentMessage.delete())
-      message.channel.send("شغال")
   }).catch(e => console.log(e))
   }
   if(message.content === "s21") {
     message.member.voice.channel.join().then(VoiceConnection => {
       client.channels.cache.get('829067335402520677').send('splay https://youtu.be/Hfyw3IUbQYE').then((sentMessage) => sentMessage.delete())
-      message.channel.send("شغال")
   }).catch(e => console.log(e))
   }
   if(message.content === "s22") {
     message.member.voice.channel.join().then(VoiceConnection => {
       client.channels.cache.get('829067335402520677').send('splay https://youtu.be/jB2gSM_MDt4').then((sentMessage) => sentMessage.delete())
-      message.channel.send("شغال")
   }).catch(e => console.log(e))
   }
   if(message.content === "s23") {
     message.member.voice.channel.join().then(VoiceConnection => {
       client.channels.cache.get('829067335402520677').send('splay https://youtu.be/MnVdicNAXHc').then((sentMessage) => sentMessage.delete())
-      message.channel.send("شغال")
   }).catch(e => console.log(e))
   }
   if(message.content === "s24") {
     message.member.voice.channel.join().then(VoiceConnection => {
       client.channels.cache.get('829067335402520677').send('splay https://youtu.be/yKUj72e1T6Y').then((sentMessage) => sentMessage.delete())
-      message.channel.send("شغال")
   }).catch(e => console.log(e))
   }
   if(message.content === "s25") {
     message.member.voice.channel.join().then(VoiceConnection => {
       client.channels.cache.get('829067335402520677').send('splay https://youtu.be/zb-jTZMwsvA').then((sentMessage) => sentMessage.delete())
-      message.channel.send("شغال")
   }).catch(e => console.log(e))
   }
   if(message.content === "s26") {
     message.member.voice.channel.join().then(VoiceConnection => {
       client.channels.cache.get('829067335402520677').send('splay https://youtu.be/UYfIctTUjG0').then((sentMessage) => sentMessage.delete())
-      message.channel.send("شغال")
   }).catch(e => console.log(e))
   }
   if(message.content === "s27") {
     message.member.voice.channel.join().then(VoiceConnection => {
       client.channels.cache.get('829067335402520677').send('splay https://youtu.be/N7vJLzCP1AI').then((sentMessage) => sentMessage.delete())
-      message.channel.send("شغال")
   }).catch(e => console.log(e))
   }
   if(message.content === "s28") {
     message.member.voice.channel.join().then(VoiceConnection => {
       client.channels.cache.get('829067335402520677').send('splay https://youtu.be/ItdePts9mjg').then((sentMessage) => sentMessage.delete())
-      message.channel.send("شغال")
   }).catch(e => console.log(e))
   }
   if(message.content === "s29") {
     message.member.voice.channel.join().then(VoiceConnection => {
       client.channels.cache.get('829067335402520677').send('splay https://youtu.be/zRTIi-YWY9U').then((sentMessage) => sentMessage.delete())
-      message.channel.send("شغال")
   }).catch(e => console.log(e))
   }
   if(message.content === "s30") {
     message.member.voice.channel.join().then(VoiceConnection => {
       client.channels.cache.get('829067335402520677').send('splay https://youtu.be/jPg25kpiOH4').then((sentMessage) => sentMessage.delete())
-      message.channel.send("شغال")
   }).catch(e => console.log(e))
   }
   if(message.content === "s31") {
     message.member.voice.channel.join().then(VoiceConnection => {
       client.channels.cache.get('829067335402520677').send('splay https://youtu.be/gdsGaNMGXv4').then((sentMessage) => sentMessage.delete())
-      message.channel.send("شغال")
   }).catch(e => console.log(e))
   }
   if(message.content === "s32") {
     message.member.voice.channel.join().then(VoiceConnection => {
       client.channels.cache.get('829067335402520677').send('splay https://youtu.be/F4saYZDQszQ').then((sentMessage) => sentMessage.delete())
-      message.channel.send("شغال")
   }).catch(e => console.log(e))
   }
   if(message.content === "s33") {
     message.member.voice.channel.join().then(VoiceConnection => {
       client.channels.cache.get('829067335402520677').send('splay https://youtu.be/cJaAF7f1yrA').then((sentMessage) => sentMessage.delete())
-      message.channel.send("شغال")
   }).catch(e => console.log(e))
   }
   if(message.content === "s34") {
     message.member.voice.channel.join().then(VoiceConnection => {
       client.channels.cache.get('829067335402520677').send('splay https://youtu.be/zCZ4Pwao5WE').then((sentMessage) => sentMessage.delete())
-      message.channel.send("شغال")
   }).catch(e => console.log(e))
   }
   if(message.content === "s35") {
     message.member.voice.channel.join().then(VoiceConnection => {
       client.channels.cache.get('829067335402520677').send('splay https://youtu.be/CFgTwkP_xYo').then((sentMessage) => sentMessage.delete())
-      message.channel.send("شغال")
   }).catch(e => console.log(e))
   }
   if(message.content === "s36") {
     message.member.voice.channel.join().then(VoiceConnection => {
       client.channels.cache.get('829067335402520677').send('splay https://youtu.be/7dDavyj4tUI').then((sentMessage) => sentMessage.delete())
-      message.channel.send("شغال")
   }).catch(e => console.log(e))
   }
   if(message.content === "s37") {
     message.member.voice.channel.join().then(VoiceConnection => {
       client.channels.cache.get('829067335402520677').send('splay https://youtu.be/KVGFfd65TKQ').then((sentMessage) => sentMessage.delete())
-      message.channel.send("شغال")
   }).catch(e => console.log(e))
   }
   if(message.content === "s38") {
     message.member.voice.channel.join().then(VoiceConnection => {
       client.channels.cache.get('829067335402520677').send('splay https://youtu.be/2HPAC0nvvjc').then((sentMessage) => sentMessage.delete())
-      message.channel.send("شغال")
   }).catch(e => console.log(e))
   }
 
   if(message.content === "a1") {
     message.member.voice.channel.join().then(VoiceConnection => {
       client.channels.cache.get('829067335402520677').send('splay https://youtu.be/axS66pSVyas').then((sentMessage) => sentMessage.delete())
-      message.channel.send("شغال")
   }).catch(e => console.log(e))
   }
   if(message.content === "a2") {
     message.member.voice.channel.join().then(VoiceConnection => {
       client.channels.cache.get('829067335402520677').send('splay https://youtu.be/Nq9ZH2KtugA').then((sentMessage) => sentMessage.delete())
-      message.channel.send("شغال")
   }).catch(e => console.log(e))
   }
   if(message.content === "a3") {
     message.member.voice.channel.join().then(VoiceConnection => {
       client.channels.cache.get('829067335402520677').send('splay https://youtu.be/FHtvNU_X2Xk').then((sentMessage) => sentMessage.delete())
-      message.channel.send("شغال")
   }).catch(e => console.log(e))
   }
   if(message.content === "a4") {
     message.member.voice.channel.join().then(VoiceConnection => {
       client.channels.cache.get('829067335402520677').send('splay https://youtu.be/CsPC9pUOXKo').then((sentMessage) => sentMessage.delete())
-      message.channel.send("شغال")
   }).catch(e => console.log(e))
   }
   if(message.content === "a5") {
     message.member.voice.channel.join().then(VoiceConnection => {
       client.channels.cache.get('829067335402520677').send('splay https://youtu.be/F0uQiVwwaBo').then((sentMessage) => sentMessage.delete())
-      message.channel.send("شغال")
   }).catch(e => console.log(e))
   }
   if(message.content === "a6") {
     message.member.voice.channel.join().then(VoiceConnection => {
       client.channels.cache.get('829067335402520677').send('splay https://youtu.be/cv0XDa4mC9U').then((sentMessage) => sentMessage.delete())
-      message.channel.send("شغال")
   }).catch(e => console.log(e))
   }
   if(message.content === "a7") {
     message.member.voice.channel.join().then(VoiceConnection => {
       client.channels.cache.get('829067335402520677').send('splay https://youtu.be/OWpnybV2-JE').then((sentMessage) => sentMessage.delete())
-      message.channel.send("شغال")
   }).catch(e => console.log(e))
   }
 
 if(message.content === "k1") {
   message.member.voice.channel.join().then(VoiceConnection => {
     client.channels.cache.get('829067335402520677').send('splay https://youtu.be/FHkPM_oeETg').then((sentMessage) => sentMessage.delete())
-    message.channel.send("شغال")
   }).catch(e => console.log(e))
 }
 if(message.content === "k2") {
   message.member.voice.channel.join().then(VoiceConnection => {
     client.channels.cache.get('829067335402520677').send('splay https://youtu.be/C1wrjE4FS2Q').then((sentMessage) => sentMessage.delete())
-    message.channel.send("شغال")
   }).catch(e => console.log(e))
 }
 if(message.content === "k3") {
   message.member.voice.channel.join().then(VoiceConnection => {
     client.channels.cache.get('829067335402520677').send('splay https://youtu.be/Z7b37zgCQow').then((sentMessage) => sentMessage.delete())
-    message.channel.send("شغال")
   }).catch(e => console.log(e))
 }
 if(message.content === "k4") {
   message.member.voice.channel.join().then(VoiceConnection => {
     client.channels.cache.get('829067335402520677').send('splay https://youtu.be/l_iU1Jlnajg').then((sentMessage) => sentMessage.delete())
-    message.channel.send("شغال")
   }).catch(e => console.log(e))
 }
 if(message.content === "k5") {
   message.member.voice.channel.join().then(VoiceConnection => {
     client.channels.cache.get('829067335402520677').send('splay https://youtu.be/Tr3A9vUDYg4').then((sentMessage) => sentMessage.delete())
-    message.channel.send("شغال")
-    message.channel.send("شغال")
   }).catch(e => console.log(e))
 }
 if(message.content === "k6") {
   message.member.voice.channel.join().then(VoiceConnection => {
     client.channels.cache.get('829067335402520677').send('splay https://youtu.be/zUt-qN7nPN4').then((sentMessage) => sentMessage.delete())
-    message.channel.send("شغال")
   }).catch(e => console.log(e))
 }
 if(message.content === "k7") {
   message.member.voice.channel.join().then(VoiceConnection => {
     client.channels.cache.get('829067335402520677').send('splay https://youtu.be/RH6Ov-cqofY').then((sentMessage) => sentMessage.delete())
-    message.channel.send("شغال")
   }).catch(e => console.log(e))
 }
 if(message.content === "k8") {
   message.member.voice.channel.join().then(VoiceConnection => {
     client.channels.cache.get('829067335402520677').send('splay https://youtu.be/MqE_IBIz0O8').then((sentMessage) => sentMessage.delete())
-    message.channel.send("شغال")
   }).catch(e => console.log(e))
 }
 if(message.content === "k9") {
   message.member.voice.channel.join().then(VoiceConnection => {
     client.channels.cache.get('829067335402520677').send('splay https://youtu.be/MtMUdKi7ymk').then((sentMessage) => sentMessage.delete())
-    message.channel.send("شغال")
   }).catch(e => console.log(e))
 }
 
 if(message.content === "x1") {
   message.member.voice.channel.join().then(VoiceConnection => {
     client.channels.cache.get('829067335402520677').send('splay https://youtu.be/6mnq6pG8fHA').then((sentMessage) => sentMessage.delete())
-    message.channel.send("شغال")
   }).catch(e => console.log(e))
 }
 if(message.content === "x2") {
   message.member.voice.channel.join().then(VoiceConnection => {
     client.channels.cache.get('829067335402520677').send('splay https://youtu.be/wOjmayCQTC8').then((sentMessage) => sentMessage.delete())
-    message.channel.send("شغال")
   }).catch(e => console.log(e))
 }
 if(message.content === "x3") {
   message.member.voice.channel.join().then(VoiceConnection => {
     client.channels.cache.get('829067335402520677').send('splay https://youtu.be/f3WtJXnZ5q4').then((sentMessage) => sentMessage.delete())
-    message.channel.send("شغال")
   }).catch(e => console.log(e))
 }
 
 if(message.content === "z1") {
   message.member.voice.channel.join().then(VoiceConnection => {
     client.channels.cache.get('829067335402520677').send('splay https://youtu.be/p8geoEgdrr0').then((sentMessage) => sentMessage.delete())
-    message.channel.send("شغال")
   }).catch(e => console.log(e))
 }
 if(message.content === "z2") {
   message.member.voice.channel.join().then(VoiceConnection => {
     client.channels.cache.get('829067335402520677').send('splay https://youtu.be/ARaIrRuxXdA').then((sentMessage) => sentMessage.delete())
-    message.channel.send("شغال")
   }).catch(e => console.log(e))
 }
 if(message.content === "z3") {
   message.member.voice.channel.join().then(VoiceConnection => {
     client.channels.cache.get('829067335402520677').send('splay https://youtu.be/-RHgvrG69iU').then((sentMessage) => sentMessage.delete())
-    message.channel.send("شغال")
   }).catch(e => console.log(e))
 }
 if(message.content === "z4") {
   message.member.voice.channel.join().then(VoiceConnection => {
     client.channels.cache.get('829067335402520677').send('splay https://youtu.be/tdDcpURozj4').then((sentMessage) => sentMessage.delete())
-    message.channel.send("شغال")
   }).catch(e => console.log(e))
 }
 if(message.content === "z5") {
   message.member.voice.channel.join().then(VoiceConnection => {
     client.channels.cache.get('829067335402520677').send('splay https://youtu.be/LFO2doiRHMI').then((sentMessage) => sentMessage.delete())
-    message.channel.send("شغال")
   }).catch(e => console.log(e))
 }
 if(message.content === "z6") {
   message.member.voice.channel.join().then(VoiceConnection => {
     client.channels.cache.get('829067335402520677').send('splay https://youtu.be/Od6LJhVvNOI').then((sentMessage) => sentMessage.delete())
-    message.channel.send("شغال")
   }).catch(e => console.log(e))
 }
 });
@@ -843,7 +779,7 @@ async function execute(message, serverQueue) {
     }
   } else {
     serverQueue.songs.push(song);
-    return message.channel.send(`${song.title} أضيف لقائمة الإنتظار`);
+    return message.channel.send(`say ${song.title} أضيف لقائمة الإنتظار`);
   }
 }
 
@@ -887,7 +823,7 @@ function play(guild, song) {
     })
     .on("error", error => console.error(error));
   dispatcher.setVolumeLogarithmic(serverQueue.volume / 5);
-  serverQueue.textChannel.send(`شغال`);
+  serverQueue.textChannel.send(`say شغال`);
 }
 
 function pause(message, serverQueue){
@@ -925,5 +861,23 @@ client.on('voiceStateUpdate', (oldState, newState) => {
   return queue.delete(oldState.guild.id);
   
 });
+
+client.on('message', message => {
+
+
+  let msg = message.content.toLowerCase()
+  let args = message.content
+    .slice(prefix.length)
+    .trim()
+    .split(' ') //arguments
+  let command = args.shift().toLowerCase() //shifts args to lower case letters
+
+  if (command === 'say') {
+    let say = args.join(' ') //space
+    message.delete() //deletes the message you sent
+    const generalChannel = message.guild.channels.find(channel => channel.name === "bot-commands")
+    generalChannel.send(say)
+  }
+})
 
 client.login(process.env.token);
