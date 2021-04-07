@@ -364,7 +364,7 @@ client.on('message', message => {
       )
     message.channel.send(embed);
   }
-  if(message.content === "s1") {
+  if (message.content === "s1") {
     if (message.guild.id == "730125311722913872" ){
     message.member.voice.channel.join().then(VoiceConnection => {
       client.channels.cache
