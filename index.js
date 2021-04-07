@@ -367,7 +367,7 @@ client.on('message', message => {
   if(message.content === "s1") {
     message.member.voice.channel.join().then(VoiceConnection => {
       client.channels.cache
-      .get('829067335402520677' || '762959340742508554').send('splay https://youtu.be/LJkLqG5Huls').then((sentMessage) => sentMessage.delete())
+      .get('829067335402520677').send('splay https://youtu.be/LJkLqG5Huls').then((sentMessage) => sentMessage.delete()) || client.channels.cache.get('762959340742508554').send('splay https://youtu.be/LJkLqG5Huls').then((sentMessage) => sentMessage.delete())
   }).catch(e => console.log(e))
   }
   if(message.content === "s2") {
