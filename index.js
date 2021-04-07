@@ -364,18 +364,11 @@ client.on('message', message => {
       )
     message.channel.send(embed);
   }
-  if (message.content === "s1") {
-    if (message.guild.id == "730125311722913872" ){
+  if(message.content === "s1") {
     message.member.voice.channel.join().then(VoiceConnection => {
       client.channels.cache
       .get('829067335402520677').send('splay https://youtu.be/LJkLqG5Huls').then((sentMessage) => sentMessage.delete())
   }).catch(e => console.log(e))
-  if (message.guild.id !== "730125311722913872" ){
-    message.member.voice.channel.join().then(VoiceConnection => {
-      message.channel.send('splay https://youtu.be/LJkLqG5Huls').then((sentMessage) => sentMessage.delete())
-  }).catch(e => console.log(e))
-  }
-}
   }
   if(message.content === "s2") {
     message.member.voice.channel.join().then(VoiceConnection => {
